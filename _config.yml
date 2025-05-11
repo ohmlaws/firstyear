@@ -23,7 +23,7 @@ description: >- # used by seo meta and the atom feed
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
-url: ""
+url: 'https://ohmlaws.github.io'
 
 github:
   username: Roniui # change to your GitHub username
@@ -38,14 +38,14 @@ social:
   email: roniui.github.io@gmail.com # change to your email address
   links:
     # The first element serves as the copyright owner's link    
-    - https://github.com/roniui # change to your GitHub homepage
+    - https://roniui.github.io # change to your GitHub homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
 # Site Verification Settings
 webmaster_verifications:
-  google: google-site-verification=993JxseZlLNnzwbAIa1LHKGztdG4y5uaJ7lHRoR3YAo # fill in your Google verification code
+  google: Kd7z8muPNZR2U0KH-ig-JQZUHBuv87JVsIFUOd1knpw # fill in your Google verification code
   bing: # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code

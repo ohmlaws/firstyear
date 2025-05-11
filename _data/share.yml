@@ -5,19 +5,22 @@ platforms:
   - type: Twitter
     icon: "fa-brands fa-square-x-twitter"
     link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
+    style: "color: #1DA1F2"  # Twitter blue
 
   - type: Facebook
     icon: "fab fa-facebook-square"
     link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
+    style: "color: #1877F2"
 
   - type: Telegram
     icon: "fab fa-telegram"
     link: "https://t.me/share/url?url=URL&text=TITLE"
+    style: "color: #0088cc"
 
   - type: WhatsApp
     icon: "fab fa-whatsapp"
     link: "https://wa.me/?text=TITLE%20URL"
-
+    style: "color: #25D366"
   # Uncomment below if you need to.
   #
   # - type: Linkedin

@@ -91,17 +91,3 @@ Below are some frequently asked questions based on the **ITI Electrician** sylla
 Want more Q&A? Let me know which topics to add!
 
 ---
-
-
-
-
-
-
-
-**About the Author**
-
-> **Roni**
-> About author: He loves to read news about Windows PCs, Android, Smart Devices, and more. You can always find him experimenting with electronic devices when not in front of a computer.
- {: .prompt-tip }
-
----

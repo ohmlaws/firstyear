@@ -6,7 +6,7 @@
 [![Last Commit](https://img.shields.io/github/last-commit/ohmlaws/ohmlaws.github.io.svg)](https://github.com/ohmlaws/ohmlaws.github.io/commits/main)
 [![Deployment](https://img.shields.io/github/deployments/ohmlaws/ohmlaws.github.io/github-pages)](https://github.com/ohmlaws/ohmlaws.github.io/deployments/activity_log)
 
-This is a educational blog built with [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy), a feature-rich and minimal theme for Jekyll. It is optimized for writing, reading, and technical blogging.
+This is an educational blog built with Chirpy, a feature-rich and minimal theme for Jekyll. It is optimized for writing, reading, and technical blogging.
 
 ## Live Demo
 

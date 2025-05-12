@@ -1,0 +1,31 @@
+---
+title: "Test page"
+date: 2025-05-12
+categories: [Q&A]
+tags: [question-answers, ITI]
+author: Roni
+---
+
+<p>This is a test page for interactive multiple choice questions using includes.</p>
+
+{% include mcq.html
+   question="What is the capital of France?"
+   options=[
+     {"text": "Berlin", "correct": false},
+     {"text": "Madrid", "correct": false},
+     {"text": "Paris", "correct": true},
+     {"text": "Rome", "correct": false}
+   ]
+%}
+
+{% include mcq.html
+   question="Which of the following are programming languages?"
+   options=[
+     {"text": "HTML", "correct": false},
+     {"text": "Python", "correct": true},
+     {"text": "JavaScript", "correct": true},
+     {"text": "CSS", "correct": false}
+   ]
+%}
+
+<script src="{{ '/assets/js/mcq.js' | relative_url }}"></script>

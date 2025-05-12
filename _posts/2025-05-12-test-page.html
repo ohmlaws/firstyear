@@ -8,18 +8,18 @@ author: Roni
 
 <h3>Q1: What is the capital of France?</h3>
 <ul>
-  <li onclick="checkAnswer(this, false)">Berlin</li>
-  <li onclick="checkAnswer(this, false)">Madrid</li>
-  <li onclick="checkAnswer(this, false)">Rome</li>
-  <li onclick="checkAnswer(this, true)">Paris</li>
+  <li onclick="checkAnswer(this, false)" data-correct="false">Berlin</li>
+  <li onclick="checkAnswer(this, false)" data-correct="false">Madrid</li>
+  <li onclick="checkAnswer(this, false)" data-correct="false">Rome</li>
+  <li onclick="checkAnswer(this, true)" data-correct="true">Paris</li>
 </ul>
 
 <h3>Q2: Who developed the theory of relativity?</h3>
 <ul>
-  <li onclick="checkAnswer(this, false)">Isaac Newton</li>
-  <li onclick="checkAnswer(this, false)">Nikola Tesla</li>
-  <li onclick="checkAnswer(this, true)">Albert Einstein</li>
-  <li onclick="checkAnswer(this, false)">Galileo Galilei</li>
+  <li onclick="checkAnswer(this, false)" data-correct="false">Isaac Newton</li>
+  <li onclick="checkAnswer(this, false)" data-correct="false">Nikola Tesla</li>
+  <li onclick="checkAnswer(this, true)" data-correct="true">Albert Einstein</li>
+  <li onclick="checkAnswer(this, false)" data-correct="false">Galileo Galilei</li>
 </ul>
 
 <script src="{{ '/assets/js/mcq.js' | relative_url }}"></script>

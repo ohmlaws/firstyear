@@ -1,31 +1,35 @@
 ---
-title: "Test page"
+title: "mcq"
 date: 2025-05-12
 categories: [Q&A]
 tags: [question-answers, ITI]
 author: Roni
 ---
 
-<p>This is a test page for interactive multiple choice questions using includes.</p>
+<h3>Q1: What is the capital of France?</h3>
+<ul>
+  <li onclick="checkAnswer(this, false)">Berlin</li>
+  <li onclick="checkAnswer(this, false)">Madrid</li>
+  <li onclick="checkAnswer(this, false)">Rome</li>
+  <li onclick="checkAnswer(this, true)">Paris</li>
+</ul>
 
-{% include mcq.html
-   question="What is the capital of France?"
-   options=[
-     {"text": "Berlin", "correct": false},
-     {"text": "Madrid", "correct": false},
-     {"text": "Paris", "correct": true},
-     {"text": "Rome", "correct": false}
-   ]
-%}
-
-{% include mcq.html
-   question="Which of the following are programming languages?"
-   options=[
-     {"text": "HTML", "correct": false},
-     {"text": "Python", "correct": true},
-     {"text": "JavaScript", "correct": true},
-     {"text": "CSS", "correct": false}
-   ]
-%}
+<h3>Q2: Who developed the theory of relativity?</h3>
+<ul>
+  <li onclick="checkAnswer(this, false)">Isaac Newton</li>
+  <li onclick="checkAnswer(this, false)">Nikola Tesla</li>
+  <li onclick="checkAnswer(this, true)">Albert Einstein</li>
+  <li onclick="checkAnswer(this, false)">Galileo Galilei</li>
+</ul>
 
 <script src="{{ '/assets/js/mcq.js' | relative_url }}"></script>
+
+<style>
+ul li {
+  cursor: pointer;
+  margin: 6px 0;
+  padding: 6px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+</style>

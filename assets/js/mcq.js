@@ -5,7 +5,7 @@ function checkAnswer(el, isCorrect) {
   
   const listItems = el.parentElement.querySelectorAll("li");
   
-  // Reset all list items
+  // Reset all list items to default style
   listItems.forEach(li => {
     li.style.color = "#333";
     li.style.fontWeight = "normal";
@@ -15,11 +15,11 @@ function checkAnswer(el, isCorrect) {
   // Style the clicked answer
   el.style.color = isCorrect ? "green" : "red";
   el.style.fontWeight = "bold";
-  
-  // If wrong answer, highlight the correct one
+
+  // If wrong answer, highlight only the correct one
   if (!isCorrect) {
     listItems.forEach(li => {
-      if (li.onclick && li.style.color !== "red") {  // Find the correct answer
+      if (li.onclick && li !== el && li.style.color !== "red") {  // Only mark the correct answer
         li.style.color = "green";
         li.style.fontWeight = "bold";
       }

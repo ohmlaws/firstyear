@@ -7,7 +7,7 @@ function checkAnswer(el, isCorrect) {
   
   // Reset all list items to default style
   listItems.forEach(li => {
-    li.style.color = "#333";
+    li.style.color = "#333"; // Default color
     li.style.fontWeight = "normal";
     li.style.pointerEvents = "none";  // Disable further clicks on options
   });
@@ -19,7 +19,7 @@ function checkAnswer(el, isCorrect) {
   // If wrong answer, highlight only the correct one
   if (!isCorrect) {
     listItems.forEach(li => {
-      if (li.onclick && li !== el && li.style.color !== "red") {  // Only mark the correct answer
+      if (li !== el && li.style.color !== "red" && li.onclick && li.dataset.correct === "true") {
         li.style.color = "green";
         li.style.fontWeight = "bold";
       }

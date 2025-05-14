@@ -495,9 +495,6 @@ h4 {
   }
 }
 
-.header-anchor {
+h3 .anchor i.fas.fa-hashtag {
   display: none !important;
-}
-.toc-link::before {
-  content: none !important;
 }

@@ -10,12 +10,24 @@
 
 /* append your custom style below */
 
-.fa-square-x-twitter { color: #1DA1F2; }
-.fa-facebook-square { color: #1877F2; }
-.fa-telegram { color: #0088cc; }
-.fa-whatsapp { color: #25D366; }
+/* Custom colors for share icons */
+.fa-square-x-twitter {
+  color: #1DA1F2 !important;
+}
+
+.fa-facebook-square {
+  color: #1877F2 !important;
+}
+
+.fa-telegram {
+  color: #0088cc !important;
+}
+
+.fa-whatsapp {
+  color: #25D366 !important;
+}
 
 
 #back-to-top {
-  background: #28a745 !important; // green or any color
+  color: #135ca1 !important; // any color
 }

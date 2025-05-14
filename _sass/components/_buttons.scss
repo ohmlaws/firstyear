@@ -9,8 +9,8 @@
   position: fixed;
   right: 1rem;
   bottom: calc(v.$footer-height-large - v.$back2top-size / 2);
-  background: var(--button-bg);
-  color: #b32c22;
+  background: #28a745 !important;
+  color: #b32c22 !important;
   padding: 0;
   width: v.$back2top-size;
   height: v.$back2top-size;

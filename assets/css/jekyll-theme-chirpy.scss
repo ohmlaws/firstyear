@@ -14,6 +14,11 @@
 .fa-square-x-twitter {
   color: #14171A !important;
 }
+@media (prefers-color-scheme: dark) {
+  .fa-square-x-twitter {
+    color: #ffffff !important; // or any light color
+  }
+}
 
 .fa-facebook-square {
   color: #1877F2 !important;

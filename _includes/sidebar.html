@@ -51,16 +51,16 @@
     display: inline-block;
     padding: 10px 27px;
     font-size: 0.8rem;
-    color: #fff;
-    background: #705e43;
-    border: none;
+    color: #e0e0e0;
+    background: #2c2c2c;
+    border: 2px solid #c0c0c0;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
   }
   #pwa-install-btn:hover, #pwa-install-btn:focus {
-    background: #5d4d33;
+    background: #313745;
     transform: translateY(-2px) scale(1.03);
     outline: none;
   }
@@ -72,24 +72,19 @@
   <script>
   // PWA install button logic
   let deferredPrompt;
-  const installBtn = document.getElementById('pwa-install-btn');
-  window.addEventListener('beforeinstallprompt', (e) => {
-    e.preventDefault();
-    deferredPrompt = e;
-    installBtn.style.display = 'inline-block';
-  });
-  if (installBtn) {
-    installBtn.addEventListener('click', async () => {
-      if (deferredPrompt) {
-        deferredPrompt.prompt();
-        const { outcome } = await deferredPrompt.userChoice;
-        if (outcome === 'accepted') {
-          installBtn.style.display = 'none';
-        }
-        deferredPrompt = null;
-      }
-    });
+window.addEventListener('beforeinstallprompt', (e) => {
+  e.preventDefault();
+  deferredPrompt = e;
+  document.getElementById('pwa-install-btn').style.display = 'inline-block';
+});
+document.getElementById('pwa-install-btn').addEventListener('click', async () => {
+  if (deferredPrompt) {
+    deferredPrompt.prompt();
+    await deferredPrompt.userChoice;
+    deferredPrompt = null;
+    document.getElementById('pwa-install-btn').style.display = 'none';
   }
+});
   </script>
   </nav>
 

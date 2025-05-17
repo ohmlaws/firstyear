@@ -41,7 +41,8 @@
     <style>
   #pwa-install-btn {
     display: none; /* initial state, JS shows it */
-    padding: 10px 24px;
+    display: inline-block;
+    padding: 10px 27px; /* 24px + 3px on each side */
     font-size: 0.8rem;
     color: #fff;
     background: linear-gradient(90deg, #007cf0 0%, #007cf0 100%);
@@ -51,8 +52,6 @@
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
     margin: 1.5em 0;
-    width: 100%;
-    box-sizing: border-box;
   }
   #pwa-install-btn:hover, #pwa-install-btn:focus {
     background: linear-gradient(90deg, #005fa3 0%, #007cf0 100%);
@@ -69,7 +68,7 @@
   window.addEventListener('beforeinstallprompt', (e) => {
     e.preventDefault();
     deferredPrompt = e;
-    installBtn.style.display = 'block';
+    installBtn.style.display = 'inline-block';
   });
   if (installBtn) {
     installBtn.addEventListener('click', async () => {

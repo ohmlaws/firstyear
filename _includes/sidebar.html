@@ -37,55 +37,53 @@
         </li>
         <!-- .nav-item -->
       {% endfor %}
-    </ul>
+    
     <style>
-  .sidebar-btn-container {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-  }
-  #pwa-install-btn {
-    display: none; /* initial state, JS shows it */
-    display: inline-block;
-    padding: 10px 27px;
-    font-size: 0.8rem;
-    color: #e0e0e0;
-    background: #2c2c2c;
-    border: 2px solid #c0c0c0;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: background 0.3s, transform 0.2s;
-  }
-  #pwa-install-btn:hover, #pwa-install-btn:focus {
-    background: #313745;
-    transform: translateY(-2px) scale(1.03);
-    outline: none;
-  }
-  </style>
-  <div class="sidebar-btn-container">
-    <button id="pwa-install-btn">Install App</button>
-  </div>
-
-  <script>
-  // PWA install button logic
-  let deferredPrompt;
+      #pwa-install-btn {
+  display: none;
+  display: inline-block;
+  padding: 10px 27px;
+  font-size: 0.8rem;
+  color: #e0e0e0;
+  background: transparent;
+  border: 2px solid #c0c0c0;
+  border-radius: 6px;
+  box-shadow: none;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+#pwa-install-btn:hover, #pwa-install-btn:focus {
+  background: rgba(192,192,192,0.1);
+  border-color: #e0e0e0;
+  color: #fff;
+  transform: translateY(-2px) scale(1.03);
+  outline: none;
+}
+    </style>
+<div class="sbco">
+  <button id="pwa-install-btn">Install App</button>
+</div>
+<script>
+let deferredPrompt = null;
+const installBtn = document.getElementById('pwa-install-btn');
+if (installBtn) installBtn.style.display = 'none';
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
   deferredPrompt = e;
-  document.getElementById('pwa-install-btn').style.display = 'inline-block';
+  if (installBtn) installBtn.style.display = 'inline-block';
 });
-document.getElementById('pwa-install-btn').addEventListener('click', async () => {
-  if (deferredPrompt) {
-    deferredPrompt.prompt();
-    await deferredPrompt.userChoice;
-    deferredPrompt = null;
-    document.getElementById('pwa-install-btn').style.display = 'none';
-  }
-});
-  </script>
+if (installBtn) {
+  installBtn.addEventListener('click', async () => {
+    if (deferredPrompt) {
+      deferredPrompt.prompt();
+      await deferredPrompt.userChoice;
+      deferredPrompt = null;
+      installBtn.style.display = 'none';
+    }
+  });
+}
+</script>
+    </ul>
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">

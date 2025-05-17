@@ -39,27 +39,35 @@
       {% endfor %}
     </ul>
     <style>
+  .sidebar-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+  }
   #pwa-install-btn {
     display: none; /* initial state, JS shows it */
     display: inline-block;
-    padding: 10px 27px; /* 24px + 3px on each side */
+    padding: 10px 27px;
     font-size: 0.8rem;
     color: #fff;
-    background: linear-gradient(90deg, #007cf0 0%, #007cf0 100%);
+    background: #705e43;
     border: none;
     border-radius: 6px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     cursor: pointer;
     transition: background 0.3s, transform 0.2s;
-    margin: 1.5em 0;
   }
   #pwa-install-btn:hover, #pwa-install-btn:focus {
-    background: linear-gradient(90deg, #005fa3 0%, #007cf0 100%);
+    background: #5d4d33;
     transform: translateY(-2px) scale(1.03);
     outline: none;
   }
   </style>
-  <button id="pwa-install-btn">Install App</button>
+  <div class="sidebar-btn-container">
+    <button id="pwa-install-btn">Install App</button>
+  </div>
 
   <script>
   // PWA install button logic

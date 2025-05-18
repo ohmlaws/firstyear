@@ -37,7 +37,7 @@
         </li>
         <!-- .nav-item -->
       {% endfor %}
-    
+    </ul>
     <style>
       #pwa-install-btn {
   display: none;
@@ -61,29 +61,10 @@
 }
     </style>
 <div class="sbco">
-  <button id="pwa-install-btn">Install App</button>
+  Install the app:<button id="pwa-install-btn">Install App</button>
 </div>
-<script>
-let deferredPrompt = null;
-const installBtn = document.getElementById('pwa-install-btn');
-if (installBtn) installBtn.style.display = 'none';
-window.addEventListener('beforeinstallprompt', (e) => {
-  e.preventDefault();
-  deferredPrompt = e;
-  if (installBtn) installBtn.style.display = 'inline-block';
-});
-if (installBtn) {
-  installBtn.addEventListener('click', async () => {
-    if (deferredPrompt) {
-      deferredPrompt.prompt();
-      await deferredPrompt.userChoice;
-      deferredPrompt = null;
-      installBtn.style.display = 'none';
-    }
-  });
-}
-</script>
-    </ul>
+
+  
   </nav>
 
   <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">

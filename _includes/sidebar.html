@@ -38,20 +38,29 @@
         <!-- .nav-item -->
       {% endfor %}
     </ul>
+<div class="sbco" id="pwa-install-section">
+  <span id="pwa-install-text">Install the app:</span>
+  <button id="pwa-install-btn">Install App</button>
+</div>
+
 <style>
 .sbco {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  margin-top: auto;         /* Pushes to bottom if sidebar uses flex-column */
-  margin-bottom: 24px;      /* Gap from bottom */
+  margin-top: auto;        /* Pushes to bottom if sidebar is flex-column */
+  margin-bottom: 32px;     /* Space from bottom */
   width: 100%;
-  /* If your sidebar is not flex, use padding-top instead, e.g. padding-top: 60px; */
+  font-size: 0.98em;
+  /* If your sidebar is NOT flex, use padding-top: 60px; instead of margin-top:auto */
 }
-
+#pwa-install-text {
+  color: #bdbdbd;
+  margin-right: 14px;    /* Gap between text and button */
+}
 #pwa-install-btn {
   display: none;
-  padding: 8px 10px;
+  padding: 8px 14px;
   font-size: 0.8rem;
   color: #e0e0e0;
   background: #2c2c2c;
@@ -60,7 +69,6 @@
   box-shadow: none;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
-  margin-left: 12px; /* Gap between text and button */
 }
 #pwa-install-btn:hover, #pwa-install-btn:focus {
   background: #313745;
@@ -69,12 +77,6 @@
   outline: none;
 }
 </style>
-
-<div class="sbco" id="pwa-install-section">
-  <span id="pwa-install-text">Install the app:</span>
-  <button id="pwa-install-btn">Install App</button>
-</div>
-
 
   
   </nav>

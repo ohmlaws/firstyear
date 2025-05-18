@@ -38,10 +38,19 @@
         <!-- .nav-item -->
       {% endfor %}
     </ul>
-    <style>
-      #pwa-install-btn {
+<style>
+.sbco {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: auto;         /* Pushes to bottom if sidebar uses flex-column */
+  margin-bottom: 24px;      /* Gap from bottom */
+  width: 100%;
+  /* If your sidebar is not flex, use padding-top instead, e.g. padding-top: 60px; */
+}
+
+#pwa-install-btn {
   display: none;
-  display: inline-block;
   padding: 8px 10px;
   font-size: 0.8rem;
   color: #e0e0e0;
@@ -51,18 +60,21 @@
   box-shadow: none;
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
+  margin-left: 12px; /* Gap between text and button */
 }
 #pwa-install-btn:hover, #pwa-install-btn:focus {
-  background: rgba(192,192,192,0.1);
   background: #313745;
   color: #fff;
   transform: translateY(-2px) scale(1.03);
   outline: none;
 }
-    </style>
-<div class="sbco">
-  Install the app:<button id="pwa-install-btn">Install App</button>
+</style>
+
+<div class="sbco" id="pwa-install-section">
+  <span id="pwa-install-text">Install the app:</span>
+  <button id="pwa-install-btn">Install App</button>
 </div>
+
 
   
   </nav>

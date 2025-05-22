@@ -20,7 +20,7 @@ image:
   <li onclick="checkAnswer(this, false)" data-correct="false">Gravitational and non-gravitational</li>
   <li onclick="checkAnswer(this, true)" data-correct="true">Fundamental and derived</li>
   <li onclick="checkAnswer(this, false)" data-correct="false">Metric and International</li>
-</ul>
+</ul><hr>
 
 <h3 id="q2">Q2: What are fundamental units?</h3>
 <ul>
@@ -28,7 +28,7 @@ image:
   <li onclick="checkAnswer(this, true)" data-correct="true">Length, Mass, Time</li>
   <li onclick="checkAnswer(this, false)" data-correct="false">Length, Mass, Area</li>
   <li onclick="checkAnswer(this, false)" data-correct="false">Length, Pressure, Volume</li>
-</ul>
+</ul><hr>
 
 <h3 id="q3">Q3: What denotes letter 'M' in MKS system?</h3>
 <ul>
@@ -36,7 +36,7 @@ image:
   <li onclick="checkAnswer(this, true)" data-correct="true">Meter</li>
   <li onclick="checkAnswer(this, false)" data-correct="false">Millimeter</li>
   <li onclick="checkAnswer(this, false)" data-correct="false">Micron</li>
-</ul>
+</ul><hr>
 
 <h3 id="q4">Q4: How many millimetres are there in 1 inch?</h3>
 <ul>
@@ -44,8 +44,7 @@ image:
   <li onclick="checkAnswer(this, true)" data-correct="true">25.4 mm</li>
   <li onclick="checkAnswer(this, false)" data-correct="false">24.5 mm</li>
   <li onclick="checkAnswer(this, false)" data-correct="false">2.45 mm</li>
-</ul>
-
+</ul><hr>
 <h3 id="q5">Q5: What is the LCM of 12, 18, 6, 36?</h3>
 <ul>
   <li onclick="checkAnswer(this, false)" data-correct="false">12</li>
@@ -56,15 +55,26 @@ image:
 <details class="mt-2">
   <summary><strong>Show Calculation</strong></summary>
   <p>
-    Prime factorization:<br>
-    \(12 = 2^2 \times 3\) ,<br>
-    \(18 = 2 \times 3^2\),<br>
-    \(6 = 2 \times 3\),<br>
-    \(30 = 2^2 \times 3^2\)<br><br>
-    LCM = product of highest powers of all primes:<br>
-    \(LCM = 2^2 \times 3^2 = 4 \times 9 = 36\)
+   \[
+    \begin{array}{r|cccc}
+    \color{red}2 & 12, & 18, & 6, & 36 \\
+    \hline
+    \color{red}2 & 6, & 9, & 3, & 18 \\
+    \hline
+    \color{red}3 & 3, & 9, & 3, & 9 \\
+    \hline
+    \color{red}3 & 1, & 3, & 1, & 3 \\
+    \hline
+               & 1, & 1, & 1, & 1 \\
+    \end{array}
+    \quad
+\]
+    <br>
+\[
+    \text{LCM} = 2 \times 2 \times 3 \times 3 = 36
+\]
   </p>
-</details>
+</details><hr>
 
 <h3 id="q6">Q6: What is the HCF of 18, 42, 24?</h3>
 <ul>
@@ -76,14 +86,24 @@ image:
 <details class="mt-2">
   <summary><strong>Show Calculation</strong></summary>
   <p>
-    Prime factors:<br>
-    \(18 = 2 \times 3^2\),<br>
-    \(42 = 2 \times 3 \times 7\),<br>
-    \(24 = 2^3 \times 3\)<br><br>
-    Common prime factors: \(2 \times 3 = 6\)<br>
-    So, HCF = 6
+    \[
+    \begin{array}{r|ccc}
+    \color{red}2 & 18, & 42, & 24 \\
+    \hline
+    \color{red}3 & 9, & 21, & 12 \\
+    \hline
+               & 3, & 7, & 4 \\
+    \end{array}
+    \quad
+\]
+
+    <br>
+
+   \[
+    \text{HCF} = 2 \times 3 = 6
+\]
   </p>
-</details>
+</details><hr>
 
 
 <h3 id="q7">Q7: What is the improper fraction for the given mixed fraction \(7 \dfrac{3}{7}\)?</h3>
@@ -97,11 +117,11 @@ image:
   <summary><strong>Show Calculation</strong></summary>
   <p>
     To convert a mixed fraction to an improper fraction:<br><br>
-\[
+\(
     7 \dfrac{3}{7} = \dfrac{7 \times 7 + 3}{7} = \dfrac{49 + 3}{7} = \dfrac{52}{7}
-\]
+\)
   </p>
-</details>
+</details><hr>
 
 <h3 id="q8">Q8: Convert decimal 0.000659 to fraction?</h3>
 <ul>
@@ -116,7 +136,7 @@ image:
     0.000659 has 6 decimal places:<br>
     \(0.000659 = \dfrac{659}{10^6} = \dfrac{659}{1000000}\)
   </p>
-</details>
+</details><hr>
 
 
 <h3 id="q9">Q9: Simplify: \(\frac{3}{4} + \frac{2}{5} - \frac{5}{20}\)</h3>
@@ -135,10 +155,11 @@ image:
    \]<br><br>
     Now compute:<br>
 \[
-    \frac{15 + 8 - 5}{20} = \frac{18}{20} = \frac{9}{10}
+\frac{15 + 8 - 5}{20} = \frac{18}{20} = \frac{\cancel{18}^{^{9}}}{\cancel{20}^{^{10}}} = \frac{9}{10}
 \]
+
   </p>
-</details>
+</details><hr>
 
 <h3 id="q10">Q10: Divide: \(\frac{20}{31} \div \frac{15}{62}\)</h3>
 <ul>
@@ -151,17 +172,15 @@ image:
   <summary><strong>Show Calculation</strong></summary>
   <p>
 \(
-    \frac{20}{31} \div \frac{15}{62} = \frac{20}{31} \times \frac{62}{15}
-   \)<br>
-\(
+    \frac{20}{31} \div \frac{15}{62} = \frac{\cancel{20}^{^{4}}}{\cancel{31}} \times \frac{\cancel{62}^{^{2}}}{\cancel{15}^{^{3}}} 
     = \frac{8}{3} \)
-   <br>
+   <br><br>
     Convert to mixed number:<br>
 \(
      \frac{8}{3} = 2 \frac{2}{3}
    \)
   </p>
-</details>
+</details><hr>
 
 <h3 id="q11">Q11: What is the product of 0.003 x 0.5?</h3>
 <ul>
@@ -178,7 +197,9 @@ image:
     <br> = \(\dfrac{15}{10000} = 0.0015
 \)
   </p>
-</details>
+
+
+</details><hr>
 
 <h3 id="q12">Q12: Simplify: \(\frac{17.49 \times 5.2}{6.5}\)</h3>
 <ul>
@@ -200,7 +221,7 @@ image:
    \]<br>
     Final Answer: \(\boxed{13.99}\)
   </p>
-</details>
+</details><hr>
 
 <h3 id="q13">Q13: What is the length of each part if a copper wire of 225 metre is cut into 900 equal parts?</h3>
 <ul>
@@ -216,7 +237,7 @@ image:
     \text{Length of each part} = \dfrac{225}{900} = 0.25\ \text{metres}
 \]
   </p>
-</details>
+</details><hr>
 
 
 <hr>

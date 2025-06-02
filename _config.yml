@@ -16,10 +16,10 @@ timezone: Asia/Calcutta
 
 title: OhmLaws # the main title
 
-tagline: For Question & Answers # it will display as the subtitle
+tagline: Electrify your learning # it will display as the subtitle
 
 description: >- # used by seo meta and the atom feed
-  This site is for question & answers
+  Easy-to-use site for ITI students featuring MCQs and topic-based question and answers for 1st and 2nd year ITI Electrician trade.
 
 # Fill in the protocol & hostname for your site.
 # E.g. 'https://username.github.io', note that it does not end with a '/'.
@@ -46,7 +46,7 @@ social:
 # Site Verification Settings
 webmaster_verifications:
   google: Kd7z8muPNZR2U0KH-ig-JQZUHBuv87JVsIFUOd1knpw # fill in your Google verification code
-  bing: # fill in your Bing verification code
+  bing: E9A6F0BC622DEF8BC93FE6B9893AF1DC    # fill in your Bing verification code
   alexa: # fill in your Alexa verification code
   yandex: # fill in your Yandex verification code
   baidu: # fill in your Baidu verification code

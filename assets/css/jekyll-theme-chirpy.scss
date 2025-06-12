@@ -29,7 +29,17 @@
 }
 
 
-#back-to-top {
-  color: #135ca1 !important; // any color
-  border: 1px solid #de8416 !important;
+// Back-to-top progress bar
+#progress-circle {
+  margin: -1px -1px;
+  top: -2.75rem;
+  position: relative;
+  transform: rotate(-90deg);
+
+  circle {
+    stroke: #FF5722;
+    stroke-dasharray: 2 * 3.14 * 20;
+    stroke-dashoffset: 2 * 3.14 * 20;
+    transition: stroke-dashoffset 0.2s;
+  }
 }

@@ -1,3 +1,4 @@
+<a name="top"></a>
 # Changelog
 
 This changelog documents notable changes to [ohmlaws.github.io](https://github.com/ohmlaws/ohmlaws.github.io).
@@ -184,33 +185,194 @@ This changelog documents notable changes to [ohmlaws.github.io](https://github.c
   * More math and formatting cleanup ([f660b9a](https://github.com/ohmlaws/ohmlaws.github.io/commit/f660b9a5abea5d77d294a4e83c5e5ae7d4c00651))
 
 ---
-
 ## 2025-05-22
-- ### Improvement
+
+- ### Improvements
+  * Lcm and hcf ladder added ([8c5f885](https://github.com/ohmlaws/ohmlaws.github.io/commit/8c5f8855a10bb170771150ba31f70b72a900dbfa))
+  * Q10, q11 updated--system-of-units-factors-and-fraction ([2003baa](https://github.com/ohmlaws/ohmlaws.github.io/commit/2003baae1bf705efede70b4da5b66b7986ae8f0e))
   * Update system-of-units-factors-and-fraction.html ([6e85732](https://github.com/ohmlaws/ohmlaws.github.io/commit/6e857328ecd067cef151ac262a0cf6daaa66b272))
+ * Mathjax corrected -system-of-units-factors-and-fraction ([bccad9c](https://github.com/ohmlaws/ohmlaws.github.io/commit/bccad9c7726b00135c6ae0e876ed40e6461283dc)) ([a5290c1](https://github.com/ohmlaws/ohmlaws.github.io/commit/a5290c1f8be048e14dd64210d9632c6b24aef272))
+- ### Bug Fixes 
+  * Math error solved ([56cd2bd](https://github.com/ohmlaws/ohmlaws.github.io/commit/56cd2bd8c558328999773173baf7eec1f76da4f9))
 
 ---
 
 ## 2025-05-21
 - ### Features
   * Create system-of-units-factors-and-fraction.html ([27a6eeb](https://github.com/ohmlaws/ohmlaws.github.io/commit/27a6eebc20ce82ec56a257ffee98fbb8611b74d7))
+* Ws Calculation banner images added ([f22be08](https://github.com/ohmlaws/ohmlaws.github.io/commit/f22be0849af5098870a22bd514432f26fb3719f7))
+  * Upload-Essential digital skills ([fb6c747](https://github.com/ohmlaws/ohmlaws.github.io/commit/fb6c74791d395a8a78e9441daef7842b6e31351f))
+  * Upload- Communication Skills ([fcd9a85](https://github.com/ohmlaws/ohmlaws.github.io/commit/fcd9a85ae374eafb71e429a0a10038f4953a87f3))
+  * Upload- Basic english skills ([74fa0e6](https://github.com/ohmlaws/ohmlaws.github.io/commit/74fa0e65c647d668392f5f6f64ed53430df93f4d))
+  * Upload- Becoming a professional in the 21st century ([9a828a3](https://github.com/ohmlaws/ohmlaws.github.io/commit/9a828a3f7ccaeb62ff3fdaa9438046c6e59e2eac))
+  * Upload- Constitutional values citizenship ([d920cfa](https://github.com/ohmlaws/ohmlaws.github.io/commit/d920cfa202b3f1501c3ece5424681bf57f1daf82))
+  * Upload- Introduction to Employability Skills ([53eb63e](https://github.com/ohmlaws/ohmlaws.github.io/commit/53eb63eae3e1d0f321b2c2e310fe0664ac140dd2))
 - ### Improvement
+  * Update Financial and legal literacy ([5ce81aa](https://github.com/ohmlaws/ohmlaws.github.io/commit/5ce81aa1999e6553366ed0e897fb0a437de7b9ef))
   * Update entrepreneurship page ([2870991](https://github.com/ohmlaws/ohmlaws.github.io/commit/2870991d9f531e73fc0e869fa9eebca38d2dea44))
+  * Update Essential digital skills ([cb39148](https://github.com/ohmlaws/ohmlaws.github.io/commit/cb391485557119727b5722f029f11a041bf250ec))
+  * Update Constitutional values Citizenship ([9e57c86](https://github.com/ohmlaws/ohmlaws.github.io/commit/9e57c86beed69e3807e7448b54ab035db026e0e5))
   * Update diversity and inclusion page ([666c6f2](https://github.com/ohmlaws/ohmlaws.github.io/commit/666c6f23481d7cd63b93d9b74c35fbe6983b6b24))
   * Update becoming a professional in the 21st century ([bf40120](https://github.com/ohmlaws/ohmlaws.github.io/commit/bf401208cde4587b1596fb470c6ab27441b41fc0))
   * Update communication skills ([958d4f6](https://github.com/ohmlaws/ohmlaws.github.io/commit/958d4f65ecea91f681415cdcce9d3ac1184ff158))
   * Update basic english skills ([bfb60cf](https://github.com/ohmlaws/ohmlaws.github.io/commit/bfb60cf4855cde95f33eca19e2c6c3e3af177128))
+  * Update Introduction to Employability Skills ([5de2dd6](https://github.com/ohmlaws/ohmlaws.github.io/commit/5de2dd6ab9b3ebcb17f115aced5d6731f6552080))
 - ### Bug Fixes
-  * Delete essential digital skills post ([fd73e1d](https://github.com/ohmlaws/ohmlaws.github.io/commit/fd73e1de85a63b08a0b8aae2981ab12cf3defdae))
+ (Deleted below files due to files path change and same files uploaded to _posts/1st-year/emp-skills/)
+  * Delete essential digital skills post, Constitutional values citizenship,  Communication Skills,  Becoming a professional in the 21st century, Basic English skills, Introduction to Employability Skills 
+
+  * Delete test page ([be47f1f](https://github.com/ohmlaws/ohmlaws.github.io/commit/be47f1fa0090a1b2e25695a76af8df5de5dcc77b))
+  * Delete mcq test ([12d9681](https://github.com/ohmlaws/ohmlaws.github.io/commit/12d9681d83ae678700b772b58a7fdae936355ecb))
+  * Delete Interview questions ([8063615](https://github.com/ohmlaws/ohmlaws.github.io/commit/806361561bb71062489820c08b0413c337689d19))
+  * Delete Electrician qa ([d8d14ae](https://github.com/ohmlaws/ohmlaws.github.io/commit/d8d14ae22387247664b8e1f71182a6b8f563d6e7))
 
 ---
 
-## 2025-05-17
-- ### Improvement
-  * Update constitutional values and citizenship page ([9e57c86](https://github.com/ohmlaws/ohmlaws.github.io/commit/9e57c86beed69e3807e7448b54ab035db026e0e5))
+## 2025-05-20
+
+- ### Features 
+    * Upload- Getting ready for apprenticeship and jobs ([c5969ac](https://github.com/ohmlaws/ohmlaws.github.io/commit/c5969ac76c6d42236c359bbbf1569a2f8109bbd5))
+    * Upload- Customer service ([3f5f2d8](https://github.com/ohmlaws/ohmlaws.github.io/commit/3f5f2d80a48826b98a2df4a3ff25cf244051041a))
+    * Upload- Career development and goal setting ([ddf8acf](https://github.com/ohmlaws/ohmlaws.github.io/commit/ddf8acf002a195b753cc46b08036deda22fe01c4))
+
+---
+
+## 2025-05-19
+
+- ### Features 
+  * Upload- Entrepreneurship page ([bd4126f](https://github.com/ohmlaws/ohmlaws.github.io/commit/bd4126fae4fcd6116c32978391d883bbd4439304))
+  * Upload- Employability Skills part-2 banner images ([68e992a](https://github.com/ohmlaws/ohmlaws.github.io/commit/68e992a1f209a16c98d6c5c0317f01437aa059c0))
+- ### Improvements
+  * Update Entrepreneurship page ([a3d4287](https://github.com/ohmlaws/ohmlaws.github.io/commit/a3d42870171cbe3c8c68d6d9b0ba3937968cb6b1))
+  * Update Financial and legal literacy ([7c57628](https://github.com/ohmlaws/ohmlaws.github.io/commit/7c57628cceb823de983499ed2e86d719ddff6549))
+  * Update Diversity and inclusion ([d1b9ff4](https://github.com/ohmlaws/ohmlaws.github.io/commit/d1b9ff4d1114b69e69304c018d530e56d139bcbb))
+
+---
+
+## 2025-05-18 
+- ### Features 
+
+ *Add files via upload ([bbf8fcc](https://github.com/ohmlaws/ohmlaws.github.io/commit/bbf8fcc51ee3c65e784a8a372ef50123a0bb9515))
+ * Create diversity-and-inclusion.html ([ba89b97](https://github.com/ohmlaws/ohmlaws.github.io/commit/ba89b97399f6b8bd220090ad2201fd4a80f2de7a))
+* Create default.html ([a8adce6](https://github.com/ohmlaws/ohmlaws.github.io/commit/a8adce685f3159b8c3af1747d45ac70ce81774bc))
+* Create pwa-install.js ([a389122](https://github.com/ohmlaws/ohmlaws.github.io/commit/a38912231a83ccbe46a4c1383362220ff291e4c7)) 
+
+ ### Improvements 
+* Update diversity-and-inclusion.html ([529eb65](https://github.com/ohmlaws/ohmlaws.github.io/commit/529eb6562cb9a4bcb64728cef83872d26a8d5154))
+* Update how-to-use.md ([d9bc416](https://github.comohmlaws/ohmlaws.github.io/commit/d9bc416bfced2d71407234e6eeaa36a8045a9f05))  ([ad84605](https://github.com/ohmlaws/ohmlaws.github.io/commit/ad84605a8756da699e70e3730b071857b9f45f2d)) ([a8cd23a](https://github.com/ohmlaws/ohmlaws.github.io/commit/a8cd23a8f6751faada24c0f8d3ebe6b08c98c94b))  ([a102957](https://github.com/ohmlaws/ohmlaws.github.io/commit/a1029573413c3e6c3acfc21ed10139397b65963e)) ([192906e](https://github.com/ohmlaws/ohmlaws.github.io/commit/192906e91e4add611992e4715aaac2a3fdab8a90)) 
+* Update pwa-install.js ([b974d77](https://github.com/ohmlaws/ohmlaws.github.io/commit/b974d77f8a5da44072cf7332bcca20fe077d17f8))  ([9f57309](https://github.com/ohmlaws/ohmlaws.github.io/commit/9f573094b8d691ea40e74d3fa9a75c957181b809))
+
+---
+
+## 2025-05-17 
+- ### Features 
+* Create how-to-use.md ([744869d](https://github.com/ohmlaws/ohmlaws.github.io/commit/744869da3e41e314db8b42ac127f9fcc75e12d84))
+* Upload essential-digital-skills ([61116cb](https://github.com/ohmlaws/ohmlaws.github.io/commit/61116cbf2439ae97632453ea88de07764ca5438f)) 
+ * Upload Communication Skills ([b669606](https://github.com/ohmlaws/ohmlaws.github.io/commit/b669606c002c2e998fbb09e05dacbe10bbc8498b)) 
+*Create basic-english-skills ([7052746](https://github.com/ohmlaws/ohmlaws.github.io/commit/7052746804edfdffde56b2c6e8255ac7914e53e5))
+* Create becoming-a-professional-in-the-21st-century.html ([c0e5025](https://github.com/ohmlaws/ohmlaws.github.io/commit/c0e5025097fb699863b1267f1b4b05d781e01151)) 
+* Create constitutional-values-citizenship.html ([04e4742](https://github.com/ohmlaws/ohmlaws.github.io/commit/04e4742e71912cef4a9fbf24aedde6f4e3c3b5e9))
+* Part1 all modules banner img added ([1e8e9d0](https://github.com/ohmlaws/ohmlaws.github.io/commit/1e8e9d0e29c94b00704dd0a39472524ded2be224)) 
+* Emp Skills part-1 all modules banner added ([7ef1820](https://github.com/ohmlaws/ohmlaws.github.io/commit/7ef1820ffe3185b88ed2094deacf29f7cf40a147)) 
+- ### Improvements 
+* Update how-to-use.md ([95bf7db](https://github.com/ohmlaws/ohmlaws.github.io/commit/95bf7db352a1349d0f70a26bc4885dabde86d521)) ([67f612f](https://github.com/ohmlaws/ohmlaws.github.io/commit/67f612f722a7452489d825bad41a2470672a85ab)) ([792dd0c](https://github.com/ohmlaws/ohmlaws.github.io/commit/792dd0c0f014005efb9794f69634f135a94e527e))  ([67b7175](https://github.com/ohmlaws/ohmlaws.github.io/commit/67b7175d71536bb8ecea26c49862f9044ba91cc4))  ([7343131](https://github.com/ohmlaws/ohmlaws.github.io/commit/7343131b4908e766f577e92f509739873f886ad8))  ([00092bc](https://github.com/ohmlaws/ohmlaws.github.io/commit/00092bc20669801ad8e19c756ee6a971d4f11d12)( 
+* Update essential-digital-skills.html ([49e9c04](https://github.com/ohmlaws/ohmlaws.github.io/commit/49e9c04054e6631c212c9ccc379517fd9bc63bb1)) 
+ * Update becoming-a-professional-in-the-21st-century.html ([0e58563](https://github.com/ohmlaws/ohmlaws.github.io/commit/0e58563d3bd6f76b273f48dd3aec37c9723af33b)) 
+ * Update Introduction-to-Employability-Skills ([1509ca1](https://github.com/ohmlaws/ohmlaws.github.io/commit/1509ca1dac93539a7634884ea7d56310ebd4d823)) ([45baed4](https://github.com/ohmlaws/ohmlaws.github.io/commit/45baed4486e08373ada647ba399017a199e53304)) 
+### Bug Fixes 
+ * Delete assets ([60199fc](https://github.com/ohmlaws/ohmlaws.github.io/commit/60199fcc2435d4f5ebbbed29298ae223bb1259fc))  ([b17aa45](https://github.com/ohmlaws/ohmlaws.github.io/commit/b17aa451ea2ee6066dd875d9568fa4349ec88ff0))  ([fd56f92](https://github.com/ohmlaws/ohmlaws.github.io/commit/fd56f92435f7022a3900191cb66e4b5d79108dde))   ([b4f26ee](https://github.com/ohmlaws/ohmlaws.github.io/commit/b4f26ee7bb2a8c2005b056bf28abc14df131ac24))  ([8a21219](https://github.com/ohmlaws/ohmlaws.github.io/commit/8a21219ed5dadbc868dddd11f0dd0704aace46a4))  ([65086ff](https://github.com/ohmlaws/ohmlaws.github.io/commit/65086ff64a15f6b70f0e51d751120de72f69d4be)) 
+
+
+---
+
+## 2025-05-16 
+- ### Features
+  * Create site.webmanifest ([12fdad3](https://github.com/ohmlaws/ohmlaws.github.io/commit/12fdad340931c1e23cb975dfd2d01b2b711b79fa)) 
+-### Improvements 
+ * Update site.webmanifest ([1d64caa](https://github.com/ohmlaws/ohmlaws.github.io/commit/1d64caa4f29d9ad21c027a95ed2f8a1241cbe8f7)) 
+
+---
+
+## 2025-05-14 
+- ### Features 
+* Create _buttons.scss ([a6a1e46](https://github.com/ohmlaws/ohmlaws.github.io/commit/a6a1e46e294b43ee8840f131b0a775b4a490f02d)) 
+ * Create refactor-content.html ([fa73034](https://github.com/ohmlaws/ohmlaws.github.io/commit/fa73034ee71c46e25015e0747f37eb8f160ce29a)) 
+* Create _post.scss ([d42eef6](https://github.com/ohmlaws/ohmlaws.github.io/commit/d42eef60810821d14c363babe16859b8ed7d4a43)) 
+ * Create post-sharing.html ([df9db19](https://github.com/ohmlaws/ohmlaws.github.io/commit/df9db1901a800b8aa398745351d49d1f9e08a320))
+- ### Improvements
+* Update test-page.html ([fd65b55](https://github.com/ohmlaws/ohmlaws.github.io/commit/fd65b55048fff291f1bfd2366d1994f8558a3a2b)) 
+* Update share.yml ([4b1191c](https://github.com/ohmlaws/ohmlaws.github.io/commit/4b1191c2e035bc68e937150c919aa67a500d9812)) 
+ * Share buttons icon color changed ([db03da4](https://github.com/ohmlaws/ohmlaws.github.io/commit/db03da4a8c405069c2ba5f6cd09f94ab452b5faa)) ([939d451](https://github.com/ohmlaws/ohmlaws.github.io/commit/939d451e130e65080cce51b42f51922b31fc7c35)) 
+ * Customize color for share icons and back to top button ([598434c](https://github.com/ohmlaws/ohmlaws.github.io/commit/598434cb704bb24d178159c815b6e5fd8000149e)) 
+ * Update jekyll-theme-chirpy.scss ([12b3b36](https://github.com/ohmlaws/ohmlaws.github.io/commit/12b3b36139f3d097a265aeea470139f79d283793))  ([e934282](https://github.com/ohmlaws/ohmlaws.github.io/commit/e934282e5fe2dd9ced01f90d1a8e5231bbdbe5d2))  ([d75c4bb](https://github.com/ohmlaws/ohmlaws.github.io/commit/d75c4bb6b18e1dfe7f3251ff740db122c4ed6bac))  ([07e77c4](https://github.com/ohmlaws/ohmlaws.github.io/commit/07e77c493656a7362cbdf0e5ca8e3a618d7f8038)) 
+ * Update Introduction-to-Employability-Skills.html ([2ac71c9](https://github.com/ohmlaws/ohmlaws.github.io/commit/2ac71c9927ace11c8b3d35c2468e2cbbd1e08822)) 
+ * Update _buttons.scss ([6fd3f64](https://github.com/ohmlaws/ohmlaws.github.io/commit/6fd3f647a6639dd9a932a2627c58344db3c98636))
+* Update _post.scss ([1280903](https://github.com/ohmlaws/ohmlaws.github.io/commit/1280903c3294fad698d2c24e0abc24e5191eb8bb))  ([4adef09](https://github.com/ohmlaws/ohmlaws.github.io/commit/4adef094b9da6644fca12e42c7e1ec45a83d348b)) 
+
+---
+
+## 2025-05-13 
+ - ### Features 
+* Create Introduction-to-Employability-Skills ([334c43a](https://github.com/ohmlaws/ohmlaws.github.io/commit/334c43a76ebf5da42e10caa65894c42f5a821ef0))
+* Upload emp skills m1 banner ([cdb3980](https://github.com/ohmlaws/ohmlaws.github.io/commit/cdb39804c3f9afaf8052d894591a26922229390e)) 
+- ### Improvements 
+ *Update Introduction-to-Employability-Skills ([d7d8494](https://github.com/ohmlaws/ohmlaws.github.io/commit/d7d84943cead6338e4af7a2d56857b59fdf3474c))
+
+---
+
+## 2025-05-12 
+- ### Features 
+ * Add files via upload ([3f29094](https://github.com/ohmlaws/ohmlaws.github.io/commit/3f29094b1903f85990a2495f9888ac899fd6851a))
+ * Create mcq-test.html ([adbdca8](https://github.com/ohmlaws/ohmlaws.github.io/commit/adbdca839b27e9f7e7462e5b7ff141e9ac7f65c9)) 
+* Create another-test.html ([4ed3967](https://github.com/ohmlaws/ohmlaws.github.io/commit/4ed3967ed40f464fb4b8ed5d09ffe02906a3fdbf)) 
+* Create test-page.html ([4e650bb](https://github.com/ohmlaws/ohmlaws.github.io/commit/4e650bb08ff88f7bd8fb8b6987b0224ccd68cd90)) 
+ * Create mcq.html ([d94faf2](https://github.com/ohmlaws/ohmlaws.github.io/commit/d94faf24908aaddc60bfea4ba8b71d5db84b224e))
+* Create mcq.html ([c4e0bb0](https://github.com/ohmlaws/ohmlaws.github.io/commit/c4e0bb0e5c87762e9deb34585e6f59ee55db6dba)) 
+ * Create mcq.js ([fc35017](https://github.com/ohmlaws/ohmlaws.github.io/commit/fc350176e14d9838b4321a268ee6fac229923d51)) 
+- ### Improvements 
+* Update mcq-test.html ([84bda33](https://github.com/ohmlaws/ohmlaws.github.io/commit/84bda33a4f45f870119e420444830596b72ca704))
+ * Update README.md ([264d3d4](https://github.com/ohmlaws/ohmlaws.github.io/commit/264d3d4f650eb3a871bbac9c8ef8f66772759204))  ([ec307f8](https://github.com/ohmlaws/ohmlaws.github.io/commit/ec307f8f9a045476ef981806594d8f83d7a217f9))
+ * Update LICENSE ([ff659b5](https://github.com/ohmlaws/ohmlaws.github.io/commit/ff659b5c2fa5becb4f2e6559c74e102a5d20c47d)) 
+ * Update mcq.js ([6d9f70c](https://github.com/ohmlaws/ohmlaws.github.io/commit/6d9f70c79875a70b224e6a4429707c021f65cf41))  ([65b529d](https://github.com/ohmlaws/ohmlaws.github.io/commit/65b529d2fac11f35a56b21a2a988c09ef4cd1789))
+ * Update test-page.html ([979fc94](https://github.com/ohmlaws/ohmlaws.github.io/commit/979fc948d45e9de29a390b761c0e6e25dae22dab)) ([d7d2beb`](https://github.com/ohmlaws/ohmlaws.github.io/commit/d7d2beb22b3db506e8f1dbe378175adc2317c524))
+ * Update mcq.js ([93acfa6](https://github.com/ohmlaws/ohmlaws.github.io/commit/93acfa6820d65b7c8c834dc2d43a30c72032b13f)) ([ccae86e](https://github.com/ohmlaws/ohmlaws.github.io/commit/ccae86ed62cea1af30c47323f639ad4154532f2d))  ([04771cf](https://github.com/ohmlaws/ohmlaws.github.io/commit/04771cf07b4d490d3a1092c085fba0d9a5a211d4))  ([68bcfb8](https://github.com/ohmlaws/ohmlaws.github.io/commit/68bcfb87880dfa1aa3a131d91d3eb4ec44139b16)) 
+ * Update mcq.html ([6655c9c](https://github.com/ohmlaws/ohmlaws.github.io/commit/6655c9c42b953204d478dc9255e32dada5727536))  ([32bfa4a](https://github.com/ohmlaws/ohmlaws.github.io/commit/32bfa4a343bc0a54e2ecc15d7ba5e7b5ea4acabf))
+
+- ### Bug Fixes 
+ * Delete another-test.html ([3bfb58c](https://github.com/ohmlaws/ohmlaws.github.io/commit/3bfb58c792961a02104dfe5f19dc262ce4260aa5)(
+* Delete mcq.html ([0abfcca](https://github.com/ohmlaws/ohmlaws.github.io/commit/0abfccaf0da6d0f2a93be5f471be7c5adb56dfa2)) 
+ * Delete mcq.html ([c0f818f](https://github.com/ohmlaws/ohmlaws.github.io/commit/c0f818f37a24c2921d34bd5a8683260cbeb3d9c6)) 
+
+---
+
+## 2025-05-11
+ - ### Features 
+* Create jekyll-theme-chirpy.scss ([a443f55](https://github.com/ohmlaws/ohmlaws.github.io/commit/a443f55ee437b174949bc08ac7e51053e3cfa77e))
+- ### Improvements 
+ * Update share.yml add color to share buttons ([8fe17aa](https://github.com/ohmlaws/ohmlaws.github.io/commit/8fe17aa9bdd21bbbd665fab42c85ee466808734c))
+* Update share.yml add WhatsApp share option ([d5386ba](https://github.com/ohmlaws/ohmlaws.github.io/commit/d5386ba9d348bc52abad136b303088a62804c304)) 
+ * Update contact.yml ([7e5153d](https://github.com/ohmlaws/ohmlaws.github.io/commit/7e5153d77063215610f36dd992306f193659ecb6))
+* Update config.yml ([b95f960](https://github.com/ohmlaws/ohmlaws.github.io/commit/b95f960ede7dc252dace896c794a93feabb16929)) ([d5f3974](https://github.com/ohmlaws/ohmlaws.github.io/commit/d5f3974ca23bbf8564c233e1ab087f48d2afa35d))  (([d8c1c74](https://github.com/ohmlaws/ohmlaws.github.io/commit/d8c1c747df992e8613a0526025ae9f175a27eed7))
+ * Update electrician-qa.md ([eef384e](https://github.com/ohmlaws/ohmlaws.github.io/commit/eef384eca17b896e407209bcd58a1571dc778d2f))
 
 ---
 
 ## 2025-05-10
-- ### Features
-  * Update safety-practice-and-hand-tools page ([d5fd108](https://github.com/ohmlaws/ohmlaws.github.io/commit/d5fd1081d3d6e6f0f74d53911e17a0f29f59f2f7))
+ - ### Features 
+* Create interview-questions.md ([31fa784](https://github.com/ohmlaws/ohmlaws.github.io/commit/31fa7846b7a3071182d663a49804ca93d8d257ac))
+* Create footer.html ([2ff2805](https://github.com/ohmlaws/ohmlaws.github.io/commit/2ff2805d90df136196c03692af4b7e0e66a6b08e)) 
+ * Create authors.yml ([e553020](https://github.com/ohmlaws/ohmlaws.github.io/commit/e553020c6bcdf91e4c79a93a6ff3f01cce0f6cbd)) 
+ * Create electrician-qa.md ([e6bc754](https://github.com/ohmlaws/ohmlaws.github.io/commit/e6bc754be3a658bf2c09658298a4b3d8991c103e)) 
+* Upload favicons ([1ab92eb](https://github.com/ohmlaws/ohmlaws.github.io/commit/1ab92eba0237198e46136ffd860b031b5315a5e8)) 
+- ### Improvements 
+* Update about.md ([eb420ff](https://github.com/ohmlaws/ohmlaws.github.io/commit/eb420ffcef382b4d23bec292da199688ced29cc5)) 
+* Update config.yml  2nd config- ([7da17fa](https://github.com/ohmlaws/ohmlaws.github.io/commit/7da17fa1c050aee18b8cddb0cf3af3d222ff2971))   1st config- ([707a5be](https://github.com/ohmlaws/ohmlaws.github.io/commit/707a5be3a55987f14dcf8df7959db129f7d66d96))
+
+ * Initial commit ([4710445](https://github.com/ohmlaws/ohmlaws.github.io/commit/47104457085bc0ac1e868b4630e3f626487a3b31))
+
+---
+
+ No bugs were harmed during the making of above updates.  
+(Just kidding, we squashed a few 🐛)  
+[🔼 Back to Top](#top)
+

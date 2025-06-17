@@ -60,4 +60,4 @@ We may update this Privacy Policy in the future to reflect changes in technology
 
 Thanks for visiting!
 
-_Last updated: 2025-06-17_
+Last updated: 2025-06-17

@@ -53,7 +53,7 @@ We may update this Privacy Policy in the future to reflect changes in technology
 
 📩 **Questions or Feedback?**  
 - Fill out the [Feedback Form](https://forms.gle/gq4jtLB2qPin9vju8)  
-- Or email: [roniui.github.io+feedback@gmail.com](roniui.github.io+feedback@gmail.com)
+- Or email: [roniui.github.io+feedback@gmail.com](mailto:roniui.github.io+feedback@gmail.com)
 
 
 

@@ -8,9 +8,13 @@ order: 4
 
 
 We are Ohmlaws ("we", "our", "us"). We’re committed to protecting and respecting your privacy. OhmLaws is also committed to providing a clean, ad-free learning environment.
+
 ---
+
 Thank you for using our site/pwa app! Your privacy is important to us. This Privacy Policy explains how we collect, use, and protect your information when you use our service.
+
 ---
+
 ## What We Don’t Do
 
 - ❌ No account creation or login required  

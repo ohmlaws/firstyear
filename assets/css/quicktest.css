@@ -45,11 +45,11 @@ html[data-theme="dark"] {
  Base styles
 =================== */
 body {
-    background-color: var(--quiz-body-bg);
+    background-color: var(--main-bg);
 }
 
 #info {
-color: var(--quiz-text-color);
+color: var(--text-color);
 }
 
 h1 {
@@ -86,7 +86,7 @@ h2 {
   padding: 10px;
   width: 220px;
   border-radius: 6px;
-  border: 1px solid var(--quiz-border-color);
+  border: 1px solid var(--bs-success);
   font-size: 16px;
 }
 
@@ -146,12 +146,12 @@ h2 {
  Question & options
 =================== */
 .question {
-  background: var(--quiz-card-bg);
+  background: var(--mask-bg);
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 6px var(--quiz-shadow);
-  color: var(--quiz-text-color);
+  color: var(text-color);
 }
 
 .options button {
@@ -163,19 +163,19 @@ h2 {
   cursor: pointer;
   margin: 8px 0;
   background: var(--quiz-option-bg);
-  color: var(--quiz-text-color);
+  color: var(--text-color);
 }
 
 .correct {
   background: var(--quiz-correct-bg) !important;
   border-color: var(--quiz-correct-border) !important;
-  color: var(--quiz-text-color);
+  color: var(--text-color);
 }
 
 .wrong {
   background: var(--quiz-wrong-bg) !important;
   border-color: var(--quiz-wrong-border) !important;
-  color: var(--quiz-text-color);
+  color: var(--text-color);
 }
 
 /* ===================
@@ -194,7 +194,7 @@ h2 {
   padding: 20px;
   max-width: 320px;
   margin: 0 auto;
-  color: var(--quiz-text-color);
+  color: var(--text-color);
 }
 
 #circle-score {
@@ -243,7 +243,7 @@ h2 {
 
 #challenge-text {
   font-size: 12px;
-  color: var(--quiz-text-color);
+  color: var(--text-color);
   margin-top: 20px;
 }
 

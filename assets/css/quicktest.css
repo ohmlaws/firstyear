@@ -67,7 +67,6 @@ h2 {
   margin-top: 40px;
   font-weight: bold;
   text-align: center;
-  color: var(--quiz-text-color);
 }
 
 
@@ -89,8 +88,6 @@ h2 {
   border-radius: 6px;
   border: 1px solid var(--quiz-border-color);
   font-size: 16px;
-  background: var(--quiz-card-bg);
-  color: var(--quiz-text-color);
 }
 
 #start-btn,

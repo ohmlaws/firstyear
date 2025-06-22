@@ -1,234 +1,175 @@
-html {
-  scroll-behavior: smooth;
+    html { scroll-behavior: smooth; }
+    body {
+      padding: 5px;
+    }
+    #user-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
 
-  /* Define color variables for light theme */
-  --bg-color: #ffffff;
-  --text-color: #222222;
-  --card-bg: #ffffff;
-  --option-bg: #eeeeee;  
-  --primary: #004687;
-  --primary-hover: #0056b3;
-  --border-color: #ccc;
-  --correct-bg: #c8f7c5;
-  --correct-border: green;
-  --wrong-bg: #ffd6d6;
-  --wrong-border: red;
-  --circle-bg: #eaf4ff;
-  --floating-bg: #222;
-  --link-color: #007bff;
-  --link-hover: #0056b3;
-  --shadow: rgba(0,0,0,0.1);
-}
+    #username {
+      padding: 10px;
+      width: 220px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
 
-/* Dark mode overrides */
-html[data-theme="dark"] {
-  --bg-color: #121212;
-  --text-color: #e0e0e0;
-  --card-bg: #1e1e1e;
-  --option-bg: #2d2d2d;
-  --primary: #073763;
-  --primary-hover: #1f78cf;
-  --border-color: #555;
-  --correct-bg: #265122;
-  --correct-border: #63aa59;
-  --wrong-bg: #5c1a1a;
-  --wrong-border: #aa4444;
-  --circle-bg: #16344c;
-  --floating-bg: #333;
-  --link-color: #3fa2ff;
-  --link-hover: #1f78cf;
-  --shadow: rgba(0,0,0,0.7);
-}
+    #start-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 16px;
+    }
 
-/* ===================
- Base styles
-=================== */
-body {
-  padding: 05px;
-}
-
-h1 {
-  text-align: center;
-  text-decoration: underline;
-  color: var(--text-color);
-}
-
-h2 {
-  margin-top: 30px;
-  color: var(--text-color);
-}
-
-.note {
-  margin-top: 40px;
-  font-weight: bold;
-  text-align: center;
-  color: var(--text-color);
-}
-
-ul, li {
-  margin-top: 10px;
-  color: var(--text-color);
-}
-
-/* ===================
- User Info
-=================== */
-#user-info {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-#username {
-  padding: 10px;
-  width: 220px;
-  border-radius: 6px;
-  border: 1px solid var(--border-color);
-  font-size: 16px;
-  background: var(--card-bg);
-  color: var(--text-color);
-}
-
-#start-btn,
-#submit-btn {
-  background-color: var(--primary);
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 16px;
-  box-shadow: 0 3px 6px var(--shadow);
-  transition: background 0.3s ease;
-  margin: 10px auto;
-  display: block;
-}
-
-#start-btn:hover,
-#submit-btn:hover {
-  background: var(--primary-hover);
-}
-
-#submit-btn:disabled {
-  background: #999;
-  cursor: not-allowed;
-}
-
-/* ===================
- Floating status
-=================== */
-#floating-score,
-#timer {
+    #start-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    h1 {
+      text-align: center;
+      text-decoration: underline;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+    ul, li {
+      margin-top: 10px;
+    }
+    .note {
+      margin-top: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+  
+    
+ #floating-score {
   position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #222;
+  color: #fff;
   padding: 6px 12px;
   border-radius: 6px;
   font-weight: bold;
-  box-shadow: 0 0 10px var(--shadow);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
   z-index: 1000;
 }
 
-#floating-score {
-  top: 10px;
-  right: 10px;
-  background: var(--floating-bg);
-  color: white;
-}
-
 .timer {
+  position: fixed;
   top: 10px;
   left: 10px;
-  background: #8c0600;
-  color: white;
-}
-
-/* ===================
- Question & options
-=================== */
-.question {
-  background: var(--card-bg);
-  padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px var(--shadow);
-  color: var(--text-color);
-}
-
-.options button {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border-radius: 4px;
-  border: 1px solid var(--border-color);
-  cursor: pointer;
-  margin: 8px 0;
-  background: var(--option-bg);
-  color: var(--text-color);
-}
-
-.correct {
-  background: var(--correct-bg) !important;
-  border-color: var(--correct-border) !important;
-  color: var(--text-color);
-}
-
-.wrong {
-  background: var(--wrong-bg) !important;
-  border-color: var(--wrong-border) !important;
-  color: var(--text-color);
-}
-
-/* ===================
- Result Card
-=================== */
-#result-card {
-  display: none;
-  text-align: center;
-  margin-top: 30px;
-}
-
-#card {
-  background: var(--card-bg);
-  border-radius: 12px;
-  box-shadow: 0 4px 10px var(--shadow);
-  padding: 20px;
-  max-width: 320px;
-  margin: 0 auto;
-  color: var(--text-color);
-}
-
-#circle-score {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  border: 6px solid var(--primary);
-  margin: 20px auto;
-  font-size: 24px;
-  line-height: 110px;
-  color: var(--text-color);
+  background: #ff6a6a;
+  padding: 6px 12px;
+  border-radius: 6px;
   font-weight: bold;
-  background: var(--circle-bg);
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 999;
 }
-
-#site-link {
+#submit-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
   display: block;
-  margin: 15px 0;
-  font-size: 14px;
-  color: var(--link-color);
-  text-decoration: none;
+  margin: 20px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
-#site-link:hover {
-  text-decoration: underline;
-  color: var(--link-hover);
+#submit-btn:hover {
+  background-color: #0056b3;
 }
 
-/* ===================
- Share Section
-=================== */
+#submit-btn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+    .question {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .options button {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .correct {
+      background: #c8f7c5;
+      border-color: green;
+      color: green;
+    }
+
+    .wrong {
+      background: #ffd6d6;
+      border-color: red;
+      color: red;
+    }
+
+    #result-card {
+      display: none;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    #card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      padding: 20px 20px;
+      max-width: 320px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    #circle-score {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 6px solid #007bff;
+      margin: 20px auto;
+      font-size: 24px;
+      line-height: 110px;
+      color: #007bff;
+      font-weight: bold;
+      background: #eaf4ff;
+    }
+
+    #site-link {
+      display: block;
+      margin: 15px 0;
+      font-size: 14px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    #site-link:hover {
+      text-decoration: underline;
+    }
+    
 #share-section button {
   margin: 5px;
   padding: 10px 16px;
   border: none;
-  background: var(--primary);
+  background: #007bff;
   color: white;
   border-radius: 6px;
   cursor: pointer;
@@ -236,16 +177,16 @@ ul, li {
 }
 
 #share-section button:hover {
-  background: var(--primary-hover);
+  background: #0056b3;
 }
-
-#challenge-text {
-  font-size: 12px;
-  color: var(--text-color);
-  margin-top: 20px;
-}
-
-.logo-icon {
+    #challenge-text {
+      font-size: 12px;
+          
+      color: #333;
+      margin-top: 20px;
+    }
+    
+    .logo-icon {
   height: 48px;
   vertical-align: middle;
   margin-right: 8px;

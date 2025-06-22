@@ -70,10 +70,6 @@ h2 {
   color: var(--quiz-text-color);
 }
 
-ul, li {
-  margin-top: 10px;
-  color: var(--quiz-text-color);
-}
 
 #instructions {
   color: var(--text-color)

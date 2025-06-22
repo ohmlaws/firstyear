@@ -75,6 +75,10 @@ ul, li {
   color: var(--quiz-text-color);
 }
 
+#instructions {
+  color: var(--text-color)
+}
+
 /* ===================
  User Info
 =================== */

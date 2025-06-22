@@ -1,0 +1,72 @@
+---
+title: "Quick Test"
+description: >-
+  Quick Test / Mock Test 
+date: 2025-06-22 13:35:00 +0530
+categories: [1st year, Quick Test]
+tags: [Quick Test, ITI]
+toc: false
+author: Roni
+image:
+  path: /assets/img/banner/quicktest.png
+---
+
+
+<div id="user-info">
+    <input type="text" id="username" placeholder="Enter your name to start...">
+    <button id="start-btn">Start Test</button>
+    <div><span style="color:red;">*</span> After clicking Start, the timer will begin.</div></div>
+    <div id="instructions">
+         <h1>INSTRUCTIONS</h1>
+
+  <h2>ABOUT QUESTION PAPER:</h2>
+  <ul>
+    <li>Each Question contains 2 marks.</li>
+    <li>Each Question will have 4 alternatives.</li>
+    <li>There is <strong>no negative marking</strong> for any wrong answer.</li>
+    <li>Candidates can attempt questions in any sequence.</li>
+    <li>Trade Theory - 38 Questions</li>
+    <li>Workshop Calculation and Science - 6 Questions</li>
+    <li>Engineering Drawing - 6 Questions</li>
+    <li>Employability Skills - 25 Questions</li>
+  </ul>
+
+  <h2>ABOUT ANSWERING THE QUESTIONS:</h2>
+  <ul>
+    <li>In order to answer a question, you have to <strong>Left click</strong> the option you think is appropriate/correct. The option which has been clicked on will be highlighted and shall be treated as the answer given by you for the question.</li>
+    <li>If you do not wish to attempt the question then you should not click on any option for that question.</li>
+    <li>After the expiry of exam time, the candidates will not be able to attempt any question. The answers of the candidate would be saved automatically by the system even if they have not clicked the "Submit" button.</li>
+  </ul>
+
+  <p class="note">By continuing, you agree that you have read and understood all the instructions.</p>
+   
+  </div>
+<div id="timer" class="timer" style="display: none;">Time Left: 60:00</div>
+  <div id="floating-score" style="display: none;">Answered: 0 / 0</div>
+  <div id="quiz-container"></div>
+  <button id="submit-btn" style="display: none;">Submit</button>
+
+  <div id="result-card">  
+  <div id="card">  
+    <h2><img src="/assets/img/avatar.png" alt="Logo" class="logo-icon">ITI ELECTRICIAN</h2>  
+    <h3 id="user-name-display"></h3>  
+    <div id="circle-score"></div>  
+    <a href="https://ohmlaws.github.io" target="_blank" id="site-link">Visit: ohmlaws.github.io</a>  
+
+    <div id="percentage-score" style="margin-top:10px; font-size:18px; font-weight:bold;">  
+      <!-- Percentage will go here -->  
+    </div>  
+    <div id="set-scores" style="margin-top:10px; font-size:16px;"></div>
+  </div>  
+
+  <div id="share-section">  
+    <button id="download-img">Download Image</button>  
+    <button id="share-img">Share Image</button>  
+  </div>  
+
+  <p id="challenge-text">Share your score with your friends and challenge them.</p>  
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="{{ '/assets/js/quicktest.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/questionset1.js' | relative_url }}"></script>
+<link rel="stylesheet" href="{{ '/assets/css/quicktest.css' | relative_url }}">

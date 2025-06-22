@@ -1,0 +1,272 @@
+---
+title: "Quick Test"
+description: >-
+  Quick Test / Mock Test 
+date: 2025-06-22 13:35:00 +0530
+categories: [1st year, Quick Test]
+tags: [Quick Test, ITI]
+author: Roni
+image:
+  path: /assets/img/banner/theory/m6.png
+---
+
+
+<div id="user-info">
+    <input type="text" id="username" placeholder="Enter your name to start...">
+    <button id="start-btn">Start Test</button>
+    <div><span style="color:red;">*</span> After clicking Start, the timer will begin.</div></div>
+    <div id="instructions">
+         <h1>INSTRUCTIONS</h1>
+
+  <h2>ABOUT QUESTION PAPER:</h2>
+  <ul>
+    <li>Each Question contains 2 marks.</li>
+    <li>Each Question will have 4 alternatives.</li>
+    <li>There is <strong>no negative marking</strong> for any wrong answer.</li>
+    <li>Candidates can attempt questions in any sequence.</li>
+    <li>Trade Theory - 38 Questions</li>
+    <li>Workshop Calculation and Science - 6 Questions</li>
+    <li>Engineering Drawing - 6 Questions</li>
+    <li>Employability Skills - 25 Questions</li>
+  </ul>
+
+  <h2>ABOUT ANSWERING THE QUESTIONS:</h2>
+  <ul>
+    <li>In order to answer a question, you have to <strong>Left click</strong> the option you think is appropriate/correct. The option which has been clicked on will be highlighted and shall be treated as the answer given by you for the question.</li>
+    <li>If you do not wish to attempt the question then you should not click on any option for that question.</li>
+    <li>After the expiry of exam time, the candidates will not be able to attempt any question. The answers of the candidate would be saved automatically by the system even if they have not clicked the "Submit" button.</li>
+  </ul>
+
+  <p class="note">By continuing, you agree that you have read and understood all the instructions.</p>
+   
+  </div>
+<div id="timer" class="timer" style="display: none;">Time Left: 60:00</div>
+  <div id="floating-score" style="display: none;">Answered: 0 / 0</div>
+  <div id="quiz-container"></div>
+  <button id="submit-btn" style="display: none;">Submit</button>
+
+  <div id="result-card">  
+  <div id="card">  
+    <h2><img src="/assets/img/avatar.png" alt="Logo" class="logo-icon">ITI ELECTRICIAN</h2>  
+    <h3 id="user-name-display"></h3>  
+    <div id="circle-score"></div>  
+    <a href="https://ohmlaws.github.io" target="_blank" id="site-link">Visit: ohmlaws.github.io</a>  
+
+    <div id="percentage-score" style="margin-top:10px; font-size:18px; font-weight:bold;">  
+      <!-- Percentage will go here -->  
+    </div>  
+    <div id="set-scores" style="margin-top:10px; font-size:16px;"></div>
+  </div>  
+
+  <div id="share-section">  
+    <button id="download-img">Download Image</button>  
+    <button id="share-img">Share Image</button>  
+  </div>  
+
+  <p id="challenge-text">Share your score with your friends and challenge them.</p>  
+</div>
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="{{ '/assets/js/quicktest.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/questionset1.js' | relative_url }}"></script>
+
+<style>
+      
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: sans-serif;
+      padding: 05px;
+      background: #f2f2f2;
+    }
+
+    #user-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    #username {
+      padding: 10px;
+      width: 220px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 16px;
+    }
+
+    #start-btn {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 10px;
+      font-size: 16px;
+    }
+
+    #start-btn:hover {
+      background-color: #0056b3;
+    }
+    
+    h1 {
+      text-align: center;
+      text-decoration: underline;
+    }
+    h2 {
+      margin-top: 30px;
+      color: #333;
+    }
+    ul, li {
+      margin-top: 10px;
+    }
+    .note {
+      margin-top: 40px;
+      font-weight: bold;
+      text-align: center;
+    }
+  
+    
+ #floating-score {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background: #222;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 1000;
+}
+
+.timer {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background: #ff6a6a;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  z-index: 999;
+}
+#submit-btn {
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+#submit-btn:hover {
+  background-color: #0056b3;
+}
+
+#submit-btn:disabled {
+  background-color: #999;
+  cursor: not-allowed;
+}
+    .question {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    .options button {
+      display: block;
+      margin: 8px 0;
+      padding: 10px;
+      width: 100%;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+      cursor: pointer;
+    }
+
+    .correct {
+      background: #c8f7c5;
+      border-color: green;
+      color: green;
+    }
+
+    .wrong {
+      background: #ffd6d6;
+      border-color: red;
+      color: red;
+    }
+
+    #result-card {
+      display: none;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    #card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      padding: 20px 20px;
+      max-width: 320px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    #circle-score {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 6px solid #007bff;
+      margin: 20px auto;
+      font-size: 24px;
+      line-height: 110px;
+      color: #007bff;
+      font-weight: bold;
+      background: #eaf4ff;
+    }
+
+    #site-link {
+      display: block;
+      margin: 15px 0;
+      font-size: 14px;
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    #site-link:hover {
+      text-decoration: underline;
+    }
+    
+#share-section button {
+  margin: 5px;
+  padding: 10px 16px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#share-section button:hover {
+  background: #0056b3;
+}
+    #challenge-text {
+      font-size: 12px;
+          
+      color: #333;
+      margin-top: 20px;
+    }
+    
+    .logo-icon {
+  height: 48px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+</style>

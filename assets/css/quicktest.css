@@ -44,8 +44,6 @@ html[data-theme="dark"] {
  Base styles
 =================== */
 body {
-  background: var(--bg-color);
-  color: var(--text-color);
   padding: 05px;
 }
 

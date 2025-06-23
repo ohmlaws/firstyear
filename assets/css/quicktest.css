@@ -186,7 +186,6 @@ h2 {
 }
 
 #card {
-  background: var(--quiz-card-bg);
   border-radius: 12px;
   box-shadow: 0 4px 10px var(--quiz-shadow);
   padding: 20px;
@@ -250,3 +249,9 @@ h2 {
   vertical-align: middle;
   margin-right: 8px;
   }
+.title-row {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center horizontally inside parent */
+  gap: 8px;
+}

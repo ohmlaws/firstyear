@@ -19,7 +19,6 @@ document.getElementById('start-btn').onclick = function () {
   document.getElementById('floating-score').style.display = 'block';
   document.getElementById('submit-btn').style.display = 'block';
   document.getElementById('timer').style.display = 'block';
-
   startQuiz(userName);
 };
 
@@ -29,6 +28,29 @@ function prepareOptions(optionsArray) {
   );
   const normalOpts = optionsArray.filter(opt => !specials.includes(opt));
   return [...shuffle(normalOpts), ...specials];
+}
+
+function styleCardForCapture() {
+  const card = document.querySelector('#card');
+  const savedStyles = {
+    originalBg: card.style.backgroundColor,
+    originalColor: card.style.color
+  };
+  card.style.backgroundColor = '#ffffff';
+  card.style.color = '#000000';
+  card.querySelectorAll('h1,h2,h3,h4,p,span,div,li').forEach(el => {
+    el.style.color = '#000000';
+  });
+  return savedStyles;
+}
+
+function resetCardStyle(state) {
+  const card = document.querySelector('#card');
+  card.style.backgroundColor = state.originalBg;
+  card.style.color = state.originalColor;
+  card.querySelectorAll('h1,h2,h3,h4,p,span,div,li').forEach(el => {
+    el.style.color = '';
+  });
 }
 
 function startQuiz(userName) {
@@ -129,7 +151,9 @@ function startQuiz(userName) {
   };
 
   document.getElementById('download-img').onclick = function () {
+    const savedStyles = styleCardForCapture();
     html2canvas(document.querySelector('#card')).then(canvas => {
+      resetCardStyle(savedStyles);
       const link = document.createElement('a');
       link.download = 'quiz-result.png';
       link.href = canvas.toDataURL();
@@ -138,7 +162,9 @@ function startQuiz(userName) {
   };
 
   document.getElementById('share-img').onclick = function () {
+    const savedStyles = styleCardForCapture();
     html2canvas(document.querySelector('#card')).then(canvas => {
+      resetCardStyle(savedStyles);
       canvas.toBlob(blob => {
         const file = new File([blob], 'quiz-result.png', { type: 'image/png' });
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
@@ -164,11 +190,9 @@ function showResult(userName, score, maxScore, timedOut = false) {
 
   document.getElementById('circle-score').textContent = `${score} / ${maxScore}`;
 
-  // Percentage
   const percentage = ((score / maxScore) * 100).toFixed(2);
   document.getElementById('percentage-score').textContent = `Percentage: ${percentage}%`;
 
-  // Per-set Scores
   const setScoresDiv = document.getElementById('set-scores');
   setScoresDiv.innerHTML = '<h4>Score Breakdown:</h4>';
 

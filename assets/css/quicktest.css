@@ -5,7 +5,6 @@ html {
   --quiz-bg-color: #ffffff;
   --quiz-text-color: #222222;
   --quiz-card-bg: #ffffff;
-  --quiz-option-bg: #eeeeee;
   --quiz-primary: #004687;
   --quiz-primary-hover: #0056b3;
   --quiz-border-color: #ccc;
@@ -146,7 +145,6 @@ h2 {
  Question & options
 =================== */
 .question {
-  background: var(--mask-bg);
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 8px;
@@ -169,13 +167,13 @@ h2 {
 .correct {
   background: var(--quiz-correct-bg) !important;
   border-color: var(--quiz-correct-border) !important;
-  color: var(--text-color);
+  color: #222 !important;
 }
 
 .wrong {
   background: var(--quiz-wrong-bg) !important;
   border-color: var(--quiz-wrong-border) !important;
-  color: var(--text-color);
+  color: #222 !important;
 }
 
 /* ===================

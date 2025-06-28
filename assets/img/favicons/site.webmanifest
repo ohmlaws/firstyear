@@ -20,7 +20,7 @@ layout: compress
       "type": "image/png"
     }],
   "start_url": "{{ '/index.html' | relative_url }}",
-  "theme_color": "#1b1b1e",
-  "background_color": "#1b1b1e",
+  "theme_color": "#011842",
+  "background_color": "#011842",
   "display": "standalone"
 }

@@ -1,4 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Sidebar trigger2 logic
+  const sidebarTrigger2 = document.getElementById('sidebar-trigger2');
+  if (sidebarTrigger2) {
+    sidebarTrigger2.addEventListener('click', function() {
+      document.getElementById('sidebar-trigger')?.click();
+    });
+  }
+
+  // Back to top button logic
   const btn = document.getElementById('back-to-top');
 
   if (!btn) {

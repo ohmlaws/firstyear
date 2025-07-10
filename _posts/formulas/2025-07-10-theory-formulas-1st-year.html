@@ -1,0 +1,1228 @@
+---
+title: "1st Year Trade Theory Formulas"
+description: >-
+ ITI Electrician 1st Year Trade Theory Formulas 
+date: 2025-07-10 12:40:00 +0530
+categories: [1st year, Formulas]
+tags: [Theory, ITI, Formulas]
+math: true
+pin: true
+author: Roni
+---
+
+    <style>
+        /* Custom styles for better table readability */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0; /* Tailwind gray-200 */
+        }
+        th {
+            background-color: #f8fafc; /* Tailwind gray-50 */
+            font-weight: 600;
+            color: #334155; /* Tailwind slate-700 */
+        }
+        
+        /* MathJax specific styling to ensure it fits well */
+        .formula-section .formula {
+            font-size: 1.25rem; /* Larger font for formulas */
+            text-align: center;
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background-color: var(--prompt-info-bg);
+            border-radius: 0.5rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .formula-section h3 {
+            border-bottom: 2px solid #3b82f6; /* Blue border for section titles */
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Responsive Table Styles */
+        @media (max-width: 768px) { /* Applies to screens smaller than 768px (md breakpoint in Tailwind) */
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            thead tr {
+                position: absolute;
+                top: -9999px; /* Hide table headers visually but keep them for screen readers */
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #cbd5e1; /* Light border for each "card" */
+                margin-bottom: 1rem;
+                border-radius: 0.5rem;
+                overflow: hidden;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            }
+
+            td {
+                border: none; /* Remove individual cell borders */
+                position: relative;
+                padding-left: 45%; /* Make space for the pseudo-element label */
+                text-align: right; /* Align content to the right */
+                border-bottom: 1px dashed #e2e8f0; /* Add a separator between "rows" within a "card" */
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                font-size: 0.9rem; /* Slightly smaller font for mobile content */
+            }
+
+            td:last-child {
+                border-bottom: none; /* No border for the last item in a "card" */
+            }
+
+            td::before {
+                /* This is where the magic happens. Create the "header" for the data cell */
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 40%; /* Adjust width for label */
+                padding-left: 1rem;
+                font-weight: bold;
+                text-align: left; /* Align label to the left */
+                white-space: nowrap; /* Prevent label from wrapping */
+                overflow: hidden;
+                text-overflow: ellipsis; /* Add ellipsis if label is too long */
+                font-size: 0.8rem; /* Even smaller for labels */
+                color: #64748b; /* Tailwind slate-500 */
+            }
+
+            /* Specific handling for the "Types of Power" table to keep formulas readable */
+            .table-types-of-power tr {
+                display: flex;
+                flex-direction: column; /* Stack items vertically */
+                padding: 0.5rem; /* Add some padding to the card */
+            }
+            .table-types-of-power td:first-child { /* The formula cell */
+                text-align: center;
+                padding: 0.75rem 0;
+                border-bottom: 1px solid #e2e8f0; /* Separator after formula */
+                margin-bottom: 0.5rem;
+                font-size: 1rem; /* Adjust formula font size */
+                padding-left: 0.75rem; /* Reset padding for formula cell */
+                padding-right: 0.75rem;
+            }
+            .table-types-of-power td:first-child::before {
+                content: ""; /* No label for the formula itself */
+                display: none;
+            }
+        }
+    </style>
+<body class="p-4 sm:p-8 md:p-12 lg:p-16 text-gray-800">
+
+    <div class="max-w-4xl mx-auto bg-white p-6 sm:p-8 md:p-10 rounded-xl shadow-lg">
+        <h1 class="text-3xl sm:text-4xl font-bold text-center text-blue-700 mb-6 sm:mb-8">
+            ⚡ ITI Electrician 1st Year – Complete Formula Sheet (With Units)
+        </h1>
+        <p class="text-center text-gray-600 mb-8">
+            Comprehensive list of formulas for ITI Electrician 1st Year Trade Theory.
+        </p>
+
+ <!-- Electric Charge -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">⚡️Electric Charge</h3>
+            <div class="formula">
+                \[Q = I \times t\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Charge</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">Q</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Coulomb (C)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">I</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Time</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">t</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Second (s)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- Ohm’s Law -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🧮  Ohm’s Law</h3>
+            <div class="formula">
+                \[V = I \times R\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">V</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">I</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Resistance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">R</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+<!-- Resistance – Derived Formulas -->
+<div class="formula-section mb-10">
+    <h3 class="text-2xl font-semibold text-blue-600 mb-4">🧮 Resistance – Derived Formulas</h3>
+    <div class="formula">
+        \[R = \frac{V}{I}\]
+        \[R = \frac{W}{I^2}\]
+        \[R = \frac{V^2}{W}\]
+    </div>
+
+    <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+        <table class="min-w-full bg-white">
+            <thead>
+                <tr>
+                    <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Formula</th>
+                    <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Based On</th>
+                    <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 px-4 text-sm" data-label="Formula">\(R = \frac{V}{I}\)</td>
+                    <td class="py-3 px-4 text-sm" data-label="Based On">Ohm’s Law</td>
+                    <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-sm" data-label="Formula">\(R = \frac{W}{I^2}\)</td>
+                    <td class="py-3 px-4 text-sm" data-label="Based On">Power Formula \(W = I^2 R\)</td>
+                    <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-sm" data-label="Formula">\(R = \frac{V^2}{W}\)</td>
+                    <td class="py-3 px-4 text-sm" data-label="Based On">Power Formula \(W = \frac{V^2}{R}\)</td>
+                    <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<!-- Resistors in Series & Parallel -->
+<div class="formula-section mb-10">
+    <h3 class="text-2xl font-semibold text-blue-600 mb-4">🔗 Resistors in Series & Parallel</h3>
+
+    <h4 class="text-xl font-medium text-gray-700 mb-2">Resistors in Series:</h4>
+    <div class="formula" style="font-size: 0.9rem">
+        \[R_{\text{total}} = R_1 + R_2 + \ldots + R_n\]
+    </div>
+
+    <h4 class="text-xl font-medium text-gray-700 mb-2">Resistors in Parallel:</h4>
+    <div class="formula" style="font-size: 0.9rem">
+        \[\frac{1}{R_{\text{total}}} = \frac{1}{R_1} + \frac{1}{R_2} + \ldots + \frac{1}{R_n}\]
+    </div>
+
+    <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Resistance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">R</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Total Resistance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(R_{total}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+           </div>
+
+        <!-- Inductors in Series & Parallel -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🧲 Inductors in Series & Parallel</h3>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Inductors in Series:</h4>
+            <div class="formula" style="font-size: 1rem">
+                \[L_{\text{total}} = L_1 + L_2 + \cdots + L_n\]
+            </div>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Inductors in Parallel:</h4>
+            <div class="formula" style="font-size: 1rem">
+                \[\frac{1}{L_{\text{total}}} = \frac{1}{L_1} + \frac{1}{L_2} + \cdots + \frac{1}{L_n}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Inductance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">L</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Henry (H)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Total Inductance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(L_{total}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Henry (H)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+<!-- Resistivity & Conductivity -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">📏  Resistivity & Conductivity</h3>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Resistivity Formula:</h4>
+            <div class="formula">
+                \[R = \rho \frac{L}{A}\]
+            </div>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Conductivity Formula:</h4>
+            <div class="formula">
+                \[\sigma = \frac{1}{\rho}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Resistance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">R</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Resistivity</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\rho\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm-meter (\(\Omega \cdot m\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Length</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">L</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Meter (m)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Area (Cross-section)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">A</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Meter² (m²)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Conductivity</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\sigma\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Siemens/meter (S/m)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+ <!-- Kirchhoff’s Laws -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🔁 Kirchhoff’s Laws</h3>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">KCL (Kirchhoff’s Current Law):</h4>
+            <p class="text-gray-700 mb-2">The algebraic sum of currents entering a junction is equal to the algebraic sum of currents leaving the junction.</p>
+            <div class="formula">
+                \[\sum I_{\text{in}} = \sum I_{\text{out}}\]
+            </div>
+            <p class="text-gray-700 mb-4"><em>Unit for Current: Ampere (A)</em></p>
+
+            <h4 class="text-xl font-medium text-gray-700 mb-2">KVL (Kirchhoff’s Voltage Law):</h4>
+            <p class="text-gray-700 mb-2">The algebraic sum of all voltages around any closed loop in a circuit is equal to zero.</p>
+            <div class="formula">
+                \[\sum V = 0\]
+            </div>
+            <p class="text-gray-700 mb-4"><em>Unit for Voltage: Volt (V)</em></p>
+        </div>
+
+<!-- Electromagnetic Induction (Faraday's Law) -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🧲  Electromagnetic Induction (Faraday's Law)</h3>
+            <div class="formula">
+                \[e = -N \frac{d\phi}{dt}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Induced EMF</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">e</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Number of Turns</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">N</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Unitless</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Magnetic Flux</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\phi\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Weber (Wb)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Time</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">t</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Second (s)</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="py-3 px-4 text-sm italic" data-label="">
+                                The negative sign indicates the direction of the induced EMF (Lenz's Law).
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+<!-- Capacitors in Series & Parallel -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🔌  Capacitors in Series & Parallel</h3>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Capacitors in Series:</h4>
+            <div class="formula" style="font-size: 1rem">
+                \[\frac{1}{C_{\text{total}}} = \frac{1}{C_1} + \frac{1}{C_2} + \cdots + \frac{1}{C_n}\]
+            </div>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Capacitors in Parallel:</h4>
+            <div class="formula" style="font-size: 1rem">
+                \[C_{\text{total}} = C_1 + C_2 + \cdots + C_n\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Capacitance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">C</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Farad (F)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Total Capacitance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(C_{total}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Farad (F)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+<!-- Electrical Energy -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🧮  Electrical Energy</h3>
+            <div class="formula">
+                \[E = P \times t\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Energy</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">E</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt-hour (Wh), Kilowatt-hour (kWh), Joule (J)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Power</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">P</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt (W)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Time</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">t</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Hour (h) or Second (s)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    <!-- Electric Work -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">💡  Electric Work</h3>
+            <div class="formula">
+                \[W = V \times I \times t\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Work Done</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">W</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Joule (J)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">V</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">I</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Time</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">t</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Second (s)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+ 
+  <!-- Joule’s Law of Heating -->
+        <div class="formula-section mb-10">
+            <h3 id="joules-law" class="text-2xl font-semibold text-blue-600 mb-4">🔥  Joule’s Law of Heating</h3>
+            <div class="formula">
+                \[H = I^2 R t\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Heat Produced</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">H</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Joule (J)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">I</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Resistance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">R</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Time</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">t</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Second (s)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!--  Electric Power (DC) – 3 Formulas -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🔋 Electric Power (DC) – 3 Formulas</h3>
+            <div class="formula">
+                \[P = V \times I\]
+                \[P = I^2 \times R\]
+                \[P = \frac{V^2}{R}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Power</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">P</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt (W)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">V</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">I</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Resistance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">R</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--  AC Power – Single & Three Phase -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">⚡AC Power – Single & Three Phase</h3>
+            <div class="formula">
+                \[P = V \times I \times \cos\phi \quad <br>\] \[\text{(Single Phase)}\]
+                \[P = \sqrt{3} \times V \times I \times \cos\phi \quad \]\[\text{(Three Phase)}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Active Power</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">P</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt (W)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Line Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">V</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Line Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">I</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Power Factor</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\cos\phi\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Unitless</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+       <!-- Types of Power -->
+<div class="formula-section mb-10">
+    <h3 class="text-2xl font-semibold text-blue-600 mb-4">⚡ Types of Power</h3>
+
+    <div class="formula">
+        \[ \text{Single Phase}\]
+        \[S = V \times I \] 
+        \[P = V \times I \times \cos\phi \]
+        \[Q = V \times I \times \sin\phi \]
+        \[\]
+        \[ \text{Three Phase}\]
+        \[S = \sqrt{3} \times V \times I \]        
+        \[P = \sqrt{3} \times V \times I \times \cos\phi \]        
+        \[Q = \sqrt{3} \times V \times I \times \sin\phi \]
+        \[\]
+        \[ \text{Power Triangle}\]
+        \[S^2 = P^2 + Q^2 \]
+    </div>
+
+    <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+        <table class="min-w-full bg-white table-types-of-power">
+            <thead>
+                <tr>
+                    <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                    <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                    <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-3 px-4 text-sm" data-label="Quantity">Apparent Power</td>
+                    <td class="py-3 px-4 text-sm" data-label="Symbol">S</td>
+                    <td class="py-3 px-4 text-sm" data-label="Unit">Volt-Ampere (VA)</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-sm" data-label="Quantity">Active Power</td>
+                    <td class="py-3 px-4 text-sm" data-label="Symbol">P</td>
+                    <td class="py-3 px-4 text-sm" data-label="Unit">Watt (W)</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-sm" data-label="Quantity">Reactive Power</td>
+                    <td class="py-3 px-4 text-sm" data-label="Symbol">Q</td>
+                    <td class="py-3 px-4 text-sm" data-label="Unit">Volt-Ampere Reactive (VAR)</td>
+                </tr>
+                <tr>
+                    <td class="py-3 px-4 text-sm" data-label="Quantity">Power Factor Angle</td>
+                    <td class="py-3 px-4 text-sm" data-label="Symbol">\(\phi\)</td>
+                    <td class="py-3 px-4 text-sm" data-label="Unit">Radian / Degree</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+        <!--  Power Factor – 3 Formulas -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🧠 Power Factor – 3 Formulas</h3>
+            <div class="formula">
+                \[\cos\phi = \frac{P}{S}\]
+                \[\cos\phi = \frac{R}{Z}\]
+                \[\cos\phi = \frac{1}{\sqrt{1 + \left( \frac{Q}{P} \right)^2 }}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Power Factor</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\cos\phi\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Unitless</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Active Power</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">P</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt (W)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Apparent Power</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">S</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">VA</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Resistance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">R</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Impedance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">Z</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Reactive Power</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">Q</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">VAR</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+      
+ <!--  AC Waveform Characteristics -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🔂  AC Waveform Characteristics</h3>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">RMS (Root Mean Square) Values:</h4>
+            <div class="formula">
+                \[V_{rms} = \frac{V_m}{\sqrt{2}} \approx 0.707 \times V_m\]
+                \[I_{rms} = \frac{I_m}{\sqrt{2}} \approx 0.707 \times I_m\]
+            </div>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Average Value (for half cycle of sine wave):</h4>
+            <div class="formula">
+                \[V_{avg} = \frac{2 V_m}{\pi} \approx 0.637 \times V_m\]
+                \[I_{avg} = \frac{2 I_m}{\pi} \approx 0.637 \times I_m\]
+            </div>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Form Factor:</h4>
+            <div class="formula" style="font-size: 0.9rem">
+                \[\text{Form Factor} = \frac{V_{rms}}{V_{avg}} \approx 1.11\]
+            </div>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Peak Factor (Crest Factor):</h4>
+            <div class="formula" style="font-size: 0.9rem">
+                \[\text{Peak Factor} = \frac{V_m}{V_{rms}} \approx 1.414\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Peak Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(V_m\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Peak Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(I_m\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">RMS Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(V_{rms}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">RMS Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(I_{rms}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Average Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(V_{avg}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Average Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(I_{avg}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Form Factor</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">-</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Unitless</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Peak Factor</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">-</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Unitless</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--  Impedance and Reactance -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">📐  Impedance and Reactance</h3>
+            <div class="formula">
+                \[Z = \sqrt{R^2 + X^2}\]
+                \[X = X_L - X_C\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Impedance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">Z</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Resistance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">R</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Total Reactance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">X</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Inductive Reactance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(X_L\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Capacitive Reactance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(X_C\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--  Inductive & Capacitive Reactance -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🌀  Inductive & Capacitive Reactance</h3>
+            <div class="formula">
+                \[X_L = 2\pi f L\]
+                \[X_C = \frac{1}{2\pi f C}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Inductive Reactance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(X_L\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Capacitive Reactance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(X_C\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Frequency</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">f</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Hertz (Hz)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Inductance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">L</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Henry (H)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Capacitance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">C</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Farad (F)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--  Admittance -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">⚙️  Admittance</h3>
+            <div class="formula">
+                \[Y = \frac{1}{Z}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Admittance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">Y</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Siemens (S) or mho (\(\mho\))</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Impedance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">Z</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ohm (\(\Omega\))</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+ <!--  Capacitance -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🔋  Capacitance</h3>
+            <div class="formula">
+                \[C = \frac{\varepsilon_0 \varepsilon_r A}{d}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Capacitance</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">C</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Farad (F)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Permittivity of Free Space</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\varepsilon_0\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Farad/meter (F/m) \(\approx 8.854 \times 10^{-12}\) F/m</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Relative Permittivity (Dielectric Constant)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\varepsilon_r\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Unitless</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Area of Plates</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">A</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Meter² (m²)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Distance between Plates</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">d</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Meter (m)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        
+        <!--  Transformer Formulas -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">🔄 Transformer Formulas</h3>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Voltage and Turns Ratio:</h4>
+            <div class="formula">
+                \[\frac{V_1}{V_2} = \frac{N_1}{N_2}\]
+            </div>
+            <h4 class="text-xl font-medium text-gray-700 mb-2">Current and Turns Ratio (for Ideal Transformer):</h4>
+            <div class="formula">
+                \[\frac{I_2}{I_1} = \frac{N_1}{N_2}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Primary Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(V_1\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Secondary Voltage</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(V_2\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Volt (V)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Primary Turns</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(N_1\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Unitless</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Secondary Turns</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(N_2\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Unitless</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Primary Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(I_1\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Secondary Current</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(I_2\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Ampere (A)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--  Constants & Conversions -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">📐  Constants & Conversions</h3>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Value</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">1 Kilowatt-hour (kWh)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Value">1000 Wh = 3,600,000 J</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Energy</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">1 Horsepower (HP)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Value">746 W (Electrical HP)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Power</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Speed of Light (in vacuum)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Value">\(3 \times 10^8\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">m/s</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Permittivity of free space</td>
+                            <td class="py-3 px-4 text-sm" data-label="Value">\(8.854 \times 10^{-12}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">F/m</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Permeability of free space</td>
+                            <td class="py-3 px-4 text-sm" data-label="Value">\(4\pi \times 10^{-7}\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">H/m</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--  Efficiency of Electrical Machines -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">⚙️ Efficiency of Electrical Machines</h3>
+            <div class="formula" style="font-size: 1rem">
+                \[\eta = \frac{\text{Output Power}}{\text{Input Power}} \times 100\%\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Efficiency</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\eta\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Percent (%)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Output Power</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">-</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt (W)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Input Power</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">-</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt (W)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-gray-700 italic mt-2">Applies to motors, transformers, generators, etc.</p>
+        </div>
+        <!--  Battery Efficiency -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4"> Battery Efficiency</h3>
+            <div class="formula" style="font-size: 0.9rem">
+                \[\eta = \frac{\text{Output Energy}}{\text{Input Energy}} \times 100\%\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Efficiency</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">\(\eta\)</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Percent (%)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Output Energy</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">-</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt-hour (Wh)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Input Energy</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">-</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Watt-hour (Wh)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+ 
+ <!--  Frequency & Time Period -->
+        <div class="formula-section mb-10">
+            <h3 class="text-2xl font-semibold text-blue-600 mb-4">⏱ Frequency & Time Period</h3>
+            <div class="formula">
+                \[f = \frac{1}{T}\]
+            </div>
+            <div class="overflow-x-auto rounded-lg shadow-sm border border-gray-200">
+                <table class="min-w-full bg-white">
+                    <thead>
+                        <tr>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Quantity</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Symbol</th>
+                            <th class="py-3 px-4 text-sm font-medium text-gray-700 uppercase tracking-wider">Unit</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Frequency</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">f</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Hertz (Hz)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3 px-4 text-sm" data-label="Quantity">Time Period</td>
+                            <td class="py-3 px-4 text-sm" data-label="Symbol">T</td>
+                            <td class="py-3 px-4 text-sm" data-label="Unit">Second (s)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+      

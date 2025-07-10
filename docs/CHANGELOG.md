@@ -7,6 +7,45 @@ This changelog documents notable changes to [ohmlaws.github.io](https://github.c
 
 ---
 
+ ## 2025-06-28 
+- ### Improvements 
+  * Theme color and background-color changed site.webmanifest [`699d845`](https://github.com/ohmlaws/ohmlaws.github.io/commit/699d8450da23ccc016c5a670e2798f6e4208228d) 
+
+## 2025-06-23 
+- ### Improvements 
+  * Update quicktest.css [`d171400`](https://github.com/ohmlaws/ohmlaws.github.io/commit/d1714005a320783531c607a7c277940b3f401d6e) 
+
+  * Update 2025-06-22-quick-test.html [`e39fe76`](https://github.com/ohmlaws/ohmlaws.github.io/commit/e39fe76f494b4ae5281461352984e39c4e211683) 
+  * Update share and download result card quicktest.js [`1d35e51`](https://github.com/ohmlaws/ohmlaws.github.io/commit/1d35e5192600f3409c21d2e7aa0bc974037769f8) 
+  * question, answer text color and background-color Update quicktest.css [`6ab0928`](https://github.com/ohmlaws/ohmlaws.github.io/commit/6ab0928768ab7ddd31711fd38054dab03f233f3f) 
+
+## 2025-06-22 
+- ### Improvements 
+  * Update quicktest.css [`6403f4a`](https://github.com/ohmlaws/ohmlaws.github.io/commit/6403f4a6268668fb0888257db891acba5d82cd39)  [`07de4de`](https://github.com/ohmlaws/ohmlaws.github.io/commit/07de4de4b9d4d79bfaa0c4cb44b4424620a1b078)   [`febaca8`](https://github.com/ohmlaws/ohmlaws.github.io/commit/febaca8af345577db77593364a74e01e639f80a3)  [`2de41b2`](https://github.com/ohmlaws/ohmlaws.github.io/commit/2de41b20011023aacc7161d037db026646b396dc)  [`6f923aa`](https://github.com/ohmlaws/ohmlaws.github.io/commit/6f923aa83c8533775c071f42056e944e4c1eec8f)  [`6152dbc`](https://github.com/ohmlaws/ohmlaws.github.io/commit/6152dbcb139020ede4abbd51b224a73e90cd3b20)  [`c2f354e`](https://github.com/ohmlaws/ohmlaws.github.io/commit/c2f354e997ed863c329d1da59a2dd0fa9da7d4b3)  [`778936f`](https://github.com/ohmlaws/ohmlaws.github.io/commit/778936fbee8c971c1602a43e8312b444d9317d96)  [`9014653`](https://github.com/ohmlaws/ohmlaws.github.io/commit/9014653e9252599ced5d546e119534f75dd05a32) 
+  * Update and rename -quick-test.html [`c922bd9`](https://github.com/ohmlaws/ohmlaws.github.io/commit/c922bd956f9807b019c589e0f39ea569602e9b6a)
+- ### Features
+  * Add files via upload [`dd97fc5`](https://github.com/ohmlaws/ohmlaws.github.io/commit/dd97fc5670c3c07d570cb87b5bdba6cb495b3fa4) 
+  * quicktest.css added [`814c8c1`](https://github.com/ohmlaws/ohmlaws.github.io/commit/814c8c137368bfd575e1492d1beabc325c440653) 
+  * Create 2025-06-22-Quick-Test.html [`6f1cd34`](https://github.com/ohmlaws/ohmlaws.github.io/commit/6f1cd348892db4949e1f331bedf654d23aee4161) 
+  * Add files via upload [`9c6f5b0`](https://github.com/ohmlaws/ohmlaws.github.io/commit/9c6f5b0b1764fa2ab28a8a998f55b0f857dd4165) 
+  * js files for quick test page [`c3221f4`](https://github.com/ohmlaws/ohmlaws.github.io/commit/c3221f47235cc2146e1442a7ad7eff532733fb09) 
+
+## 2025-06-17 
+- ### Improvements 
+  * Update Privacy-Policy.md [`bd0894d`](https://github.com/ohmlaws/ohmlaws.github.io/commit/bd0894d7472c0ecb99b932a06a813bf26e28c5cf)  [`627db92`](https://github.com/ohmlaws/ohmlaws.github.io/commit/627db922f3cbc0d3d4a4fd6ea33394ad37a2d402)  [`c898aba`](https://github.com/ohmlaws/ohmlaws.github.io/commit/c898aba9c223c68348d22f246d199162da951f44)  [`6b60190`](https://github.com/ohmlaws/ohmlaws.github.io/commit/6b601906a3de42216c493edcbb5064f79c8e3315)  
+  * Update and rename about.md to Privacy-Policy.md [`95a67d0`](https://github.com/ohmlaws/ohmlaws.github.io/commit/95a67d0244e2600990d35d2eb90f5ae545fab681)
+- ### Features
+  * Create faq.md [`762646e`](https://github.com/ohmlaws/ohmlaws.github.io/commit/762646eb0b656e1ab30f3abb972526e3a2083ac1)
+  * Add 'Show all Answers' button with click functionality in various pages [`dc119a7`](https://github.com/ohmlaws/ohmlaws.github.io/commit/dc119a72235600e97b20007e25a71612099444c9)  [`e6eeaf0`](https://github.com/ohmlaws/ohmlaws.github.io/commit/e6eeaf0a0c5a62c0ddc97df69691bb525235e3db)  [`47eeafe`](https://github.com/ohmlaws/ohmlaws.github.io/commit/47eeafe527e690bed0c4029502103908b6d5b092)  [`1dafd5f`](https://github.com/ohmlaws/ohmlaws.github.io/commit/1dafd5fdc14a77a5d597db12166d3eb6ac7a145c)  [`6b0a77b`](https://github.com/ohmlaws/ohmlaws.github.io/commit/6b0a77b221d8192a994bd1ad670da1659dbedeb2)  [`3f7dcf7`](https://github.com/ohmlaws/ohmlaws.github.io/commit/3f7dcf7d21ca4549eb7dfee9b679ca3d963df444)  [`9fbe46a`](https://github.com/ohmlaws/ohmlaws.github.io/commit/9fbe46a7c37c09c46f6fdd73eb829465bb072e02)  [`5d7074f`](https://github.com/ohmlaws/ohmlaws.github.io/commit/5d7074f51ea13b2dea21be4b22029421c36a1ba0)  [`bcdba15`](https://github.com/ohmlaws/ohmlaws.github.io/commit/bcdba15564fb3250ed3b33643af8fdafa037da61)  [`6188101`](https://github.com/ohmlaws/ohmlaws.github.io/commit/61881010532ffb65f2a70e1e2ac2f9db4ddd46a7)  [`b8a203f`](https://github.com/ohmlaws/ohmlaws.github.io/commit/b8a203f707f3a8155ee359676e9066fa741d3ce0)  [`3f569af`](https://github.com/ohmlaws/ohmlaws.github.io/commit/3f569af64ea244f20dc8320aea417287fdc01e0f)  [`0621027`](https://github.com/ohmlaws/ohmlaws.github.io/commit/062102779af56d35534b4cddbd050ef52e298d72)   [`6d11685`](https://github.com/ohmlaws/ohmlaws.github.io/commit/6d11685bd80225ad2b24cdbf630aacb3297acc66)  [`225824a`](https://github.com/ohmlaws/ohmlaws.github.io/commit/225824a3b1f99fa5862d6322bb6ad0da2369be57)   [`a811b47`](https://github.com/ohmlaws/ohmlaws.github.io/commit/a811b4764ea8bd2548a5b09b6cc0991971e9b179) [`43b8ee8`](https://github.com/ohmlaws/ohmlaws.github.io/commit/43b8ee8c722310a079e548fdd19551b5bc299447)  [`bd69ffe`](https://github.com/ohmlaws/ohmlaws.github.io/commit/bd69ffe6ca9b2fc85e3e3da897ba4da774d02b01)  [`24b6396`](https://github.com/ohmlaws/ohmlaws.github.io/commit/24b6396a29779d522305334ac774cd23234c9195)  [`ac935b2`](https://github.com/ohmlaws/ohmlaws.github.io/commit/ac935b23bfdfd5fd12b83abf37c5921c88125bf3)  [`335f74d`](https://github.com/ohmlaws/ohmlaws.github.io/commit/335f74d0eab78c70f139079fd98ae2b59488a109)  [`e4e4ad3`](https://github.com/ohmlaws/ohmlaws.github.io/commit/e4e4ad3855e9300df4bfb4af04b4bfeba9b8122c) 
+
+
+## 2025-06-14 
+- ### Features 
+  * Create CODE_OF_CONDUCT.md [`8a121a9`](https://github.com/ohmlaws/ohmlaws.github.io/commit/8a121a95f13838e6a1c266e5b7cbbb607f70f2cd)
+- ### Improvements
+  * Update SECURITY.md [`89efef9`](https://github.com/ohmlaws/ohmlaws.github.io/commit/89efef951a614f679bacd375d3674f4d09435150) 
+  * Update CHANGELOG.md [`c855721`](https://github.com/ohmlaws/ohmlaws.github.io/commit/c855721eec777838400f3eb592e6832cf8616ef3) 
+
 ## 2025-06-12
 
 - ### Features

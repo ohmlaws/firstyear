@@ -9,7 +9,7 @@ This repository contains the **1st Year** section of the OhmLaws educational web
 It is part of the [OhmLaws Repo](https://github.com/ohmlaws/ohmlaws.github.io).
 
 ## Live Site
-[Visit 1st Year](https://ohmlaws.github.io/firstyear/)
+[Live site](https://ohmlaws.github.io/)
 
 ---
 

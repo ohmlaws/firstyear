@@ -6,6 +6,8 @@ date: 2025-07-14 16:25:00 +0530
 categories: [1st year]
 tags: [ITI]
 author: Roni
+image:
+  path: /assets/img/banner/firstyear-suggestions.png
 ---
 <p>
     <a href="https://raw.githubusercontent.com/ohmlaws/firstyear/master/assets/pdf/iti-firstyear-suggestion.pdf"

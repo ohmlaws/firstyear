@@ -1,5 +1,6 @@
 # The Site Configuration
 
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -26,7 +27,7 @@ description: >- # used by seo meta and the atom feed
 url: 'https://ohmlaws.github.io'
 
 github:
-  username: Roniui # change to your GitHub username
+  username: Roniui # change to  your GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -149,7 +150,7 @@ pwa:
 paginate: 10
 
 # The base URL of your site
-baseurl: ""
+baseurl: "/firstyear"
 
 # ------------ The following options are not recommended to be modified ------------------
 
@@ -212,7 +213,7 @@ exclude:
   - README.md
   - LICENSE
   - purgecss.js
-  - rollup.config.js
+  - "*.config.js"
   - "package*.json"
 
 jekyll-archives:
@@ -223,3 +224,4 @@ jekyll-archives:
   permalinks:
     tag: /tags/:name/
     category: /categories/:name/
+    

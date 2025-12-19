@@ -1,5 +1,6 @@
 # The Site Configuration
 
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
@@ -26,7 +27,7 @@ description: >- # used by seo meta and the atom feed
 url: 'https://ohmlaws.github.io'
 
 github:
-  username: Roniui # change to your GitHub username
+  username: Roniui # change to  your GitHub username
 
 twitter:
   username: twitter_username # change to your Twitter username
@@ -212,7 +213,7 @@ exclude:
   - README.md
   - LICENSE
   - purgecss.js
-  - rollup.config.js
+  - "*.config.js"
   - "package*.json"
 
 jekyll-archives:

@@ -43,3 +43,9 @@
     transition: stroke-dashoffset 0.2s;
   }
 }
+
+#sidebar ul li.nav-item {
+padding-bottom: 0 !important;
+padding-top: 0 !important;
+margin: 2px !important;
+}

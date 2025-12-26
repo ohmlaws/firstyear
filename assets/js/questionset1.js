@@ -177,19 +177,19 @@ const quizSets = {
   },
   {
       question: "What is the name of the soldering method?",
-      image: "https://ohmlaws.github.io/assets/img/posts/theory/m3-q43.png",
+      image: "https://ohmlaws.github.io/firstyear/assets/img/posts/theory/m3-q43.png",
       options: ["Dip soldering", "Soldering iron", "Soldering gun", "Soldering with flame"],
       answer: "Soldering gun"      
   },
   {
       question: "Calculate the unknown resistance 'RDC' in the Wheatstone bridge circuit, if PAB = 400 ohm, QBC = 200 ohm and SAD = 12 ohm at balanced condition.",
-      image: "https://ohmlaws.github.io/assets/img/posts/theory/m4-q22.png",
+      image: "https://ohmlaws.github.io/firstyear/assets/img/posts/theory/m4-q22.png",
       options: ["4 ohm", "6 ohm", "8 ohm", "12 ohm"],
       answer: "6 ohm"      
   },
   {
       question: "What is the name of the circuit?",
-      image: "https://ohmlaws.github.io/assets/img/posts/theory/m12-q17.png",
+      image: "https://ohmlaws.github.io/firstyear/assets/img/posts/theory/m12-q17.png",
       options: ["Electronic fan regulator", "Electronic voltage multiplier", "Electronic voltage stabilizer", "Electronic triggering circuit of SCR"],
       answer: "Electronic fan regulator"      
   }

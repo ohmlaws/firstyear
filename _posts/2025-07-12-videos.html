@@ -1,0 +1,111 @@
+---
+title: Video Gallery
+description: videos for clear concept
+date: 2025-07-12 21:05:00 +0530
+categories: [videos]
+tags: [Theory, ITI]
+author: Roni
+image:
+  path: assets/img/banner/videos.webp
+  lqip: data:image/webp;base64,UklGRsABAABXRUJQVlA4ILQBAACQCACdASokABQAPpFAmkmlo6IhKqgAsBIJQBdmbrALMBRgH+O9l0nijJY24/T/osB6vE3zGiLOYSFfm311uxJzqAysyRVAKNGI/KkaQAD+/Et8SJ22f1Vegaf9FomRt2A0K5R68aVrqjPYETvy0B6LzPRt3U3lESTTTWaXsz45VE9niyVCQzabVXyvQ/ZaZ7hgVA6AvfLURVnOCbhJApvK0q7PhB0a8lpYF+e/pE72Qs6vQT5XN9LFIIrHPujDH6iJ/GnVsLn+OHyuA/5TCmaUf5CgT7z1bf7h02qyDfKT0hRofNcsj9Kh2y9S7mrFhnlLpAvbpzwk+PLG11mtjPvHmssJ49mmq406FG120YHtorknB3Un+YYq0JU5pVBIrMxDO2ogu3/BlGf7LIcTiBdIM28r416Nq4fnD8UA5V+Pn0vJ/S40rkZIcD0lxiJgXO7cSDJ5jBhuUqCaubQRDLJmjCdzp7ovsu6eC6S/lF9YwcFPAlm9Qs0OztCbGGjR/Em+TdLMGnhUDhIUFGdvh6wNS5+SMbioB8CcGX6oia8G59qmzG4/g3WjCy+l7hoPol5EdYAA
+---
+
+<style>
+    
+    .video-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-top: 20px;
+        padding-bottom: 50px;
+    }
+
+    .video-card {
+        background-color: var(--sidebar-bg); 
+        border: 1px solid var(--btn-border-color);
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: var(--btn-box-shadow);
+        position: relative;
+    }
+
+    .video-card:hover {
+        border-color: var(--link-color);
+    }
+
+    .video-title {
+        margin-top: 15px;
+        text-align: center;
+        font-weight: 600;
+        color: var(--heading-text-color);
+        font-size: 0.95rem;
+    }
+
+    .video-facade {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    background-color: #000;
+    border-radius: 12px;
+    cursor: pointer;
+    background-size: cover;
+    background-position: center;
+}
+
+.video-facade::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 24px;
+  height: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6'%3E%3C/path%3E%3Cpolyline points='15 3 21 3 21 9'%3E%3C/polyline%3E%3Cline x1='10' y1='14' x2='21' y2='3'%3E%3C/line%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 68px;
+    height: 48px;
+    background-color: #f00;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+}
+
+.play-button::after {
+    content: "";
+    border-style: solid;
+    border-width: 10px 0 10px 20px;
+    border-color: transparent transparent transparent #fff;
+      }
+</style>
+
+<div class="video-grid">
+
+   <div class="video-card">
+    <a href="https://youtu.be/MeCj31t7jFM" target="_blank" class="video-facade" style="background-image: url('https://img.youtube.com/vi/MeCj31t7jFM/maxresdefault.jpg');">
+        <div class="play-button"></div>
+    </a>
+    <div class="video-title">Electrical Transformer Working Explained in Hindi</div>
+</div>
+
+<div class="video-card">
+    <a href="https://youtu.be/bHd9plIEhNM" target="_blank" class="video-facade" style="background-image: url('https://img.youtube.com/vi/bHd9plIEhNM/maxresdefault.jpg');">
+        <div class="play-button"></div>
+    </a>
+    <div class="video-title">Open circuit test and Short circuit test In hindi</div>
+</div>
+</div>

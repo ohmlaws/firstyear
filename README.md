@@ -11,6 +11,9 @@ It is part of the [OhmLaws Repo](https://github.com/ohmlaws/ohmlaws.github.io).
 ## Live Site
 [Live site](https://ohmlaws.github.io/)
 
+## Changelog 
+Firstyear-[CHANGELOG](docs/CHANGELOG_ohmlaws_firstyear.md)
+
 ---
 
 ## License

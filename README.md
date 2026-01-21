@@ -12,7 +12,7 @@ It is part of the [OhmLaws Repo](https://github.com/ohmlaws/ohmlaws.github.io).
 [Live site](https://ohmlaws.github.io/)
 
 ## Changelog 
-Firstyear-[CHANGELOG](docs/CHANGELOG_ohmlaws_firstyear.md)
+Firstyear-[CHANGELOG](https://github.com/ohmlaws/ohmlaws-changelog/blob/main/docs/CHANGELOG_ohmlaws_firstyear.md)
 
 ---
 

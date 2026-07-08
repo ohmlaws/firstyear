@@ -68,3 +68,12 @@ margin: 2px !important;
     display: none !important;
 }
 
+/* Hide the calendar icon */
+.post-meta .fa-calendar {
+    display: none !important;
+}
+
+/* Hide date on Further Reading area */
+.card-body time {
+    display: none !important;
+}

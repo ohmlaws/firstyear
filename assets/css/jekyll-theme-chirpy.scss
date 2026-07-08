@@ -57,3 +57,14 @@ padding-bottom: 0 !important;
 padding-top: 0 !important;
 margin: 2px !important;
 }
+
+/* Hide the date on individual post pages */
+.post-meta span:has(time) {
+    display: none !important;
+}
+
+/* Hide the date on the homepage feed and lists */
+.post-meta time {
+    display: none !important;
+}
+

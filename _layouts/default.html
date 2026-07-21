@@ -83,6 +83,7 @@ layout: compress
     {% endfor %}
 
     {% include_cached search-loader.html lang=lang %}
+    <script defer src="{{ '/assets/js/post-highlight.js' | relative_url }}"></script>
     <script src="{{ '/assets/js/pwa-install.js' | relative_url }}"></script>
   </body>
             </html>

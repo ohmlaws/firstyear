@@ -77,3 +77,8 @@ margin: 2px !important;
 .card-body time {
     display: none !important;
 }
+.search-highlight {
+  background: var(--prompt-warning-icon-color);
+  border-radius: 3px;
+  padding: 0 2px;
+}

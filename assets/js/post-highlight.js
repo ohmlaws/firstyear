@@ -44,9 +44,7 @@
           if (!parent) return NodeFilter.FILTER_REJECT;
           if (SKIP.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
           
-          // UPDATED: Added #toc, #toc-popup, .toc-list, #sidebar, and #panel-wrapper
-          // This stops the script from highlighting the Table of Contents or Sidebar!
-          if (parent.closest("#toc, #toc-popup, .toc-list, #sidebar, #panel-wrapper, .search, .mermaid, .highlight, .rouge-table, .anchor, .sr-only, .visually-hidden, .d-none, [hidden]")) {
+          if (parent.closest("#toc, #toc-popup, #toc-bar, .toc-list, #sidebar, #panel-wrapper, .search, .mermaid, .highlight, .rouge-table, .anchor, .sr-only, .visually-hidden, .d-none, [hidden]")) {
             return NodeFilter.FILTER_REJECT;
           }
           
@@ -104,8 +102,8 @@
       
       floatUI.style.cssText = `
         position: fixed;
-        bottom: 15px;
-        right: 25px;
+        bottom: 25px;
+        right: 1rem;
         background: var(--main-bg);
         color: var(--text-color);
         border: 1px solid var(--border-color, #cccccc);
@@ -122,21 +120,36 @@
 
       floatUI.innerHTML = `
         <span><span id="highlight-current-index">0</span> / ${matchCount}</span>
+        <button id="btn-prev-match" style="background: #0550ae; color: #fff; border: none; padding: 5px 12px; border-radius: 5px; cursor: pointer;">Prev</button>
         <button id="btn-next-match" style="background: #0550ae; color: #fff; border: none; padding: 5px 12px; border-radius: 5px; cursor: pointer;">Next</button>
-        <button id="btn-clear-match" style="background: transparent; color: inherit; border: 1px solid var(--border-color, #ccc); padding: 5px 12px; border-radius: 5px; cursor: pointer;">Clear</button>
+        <button id="btn-clear-match" style="background: transparent; color: inherit; border: 1px solid var(--border-color, #ccc); padding: 4px 11px; border-radius: 5px; cursor: pointer;">Clear</button>
       `;
       
       document.body.appendChild(floatUI);
 
       const indexLabel = document.getElementById("highlight-current-index");
+      const btnPrev = document.getElementById("btn-prev-match");
       const btnNext = document.getElementById("btn-next-match");
       const btnClear = document.getElementById("btn-clear-match");
 
-      // Auto-scroll to the first match immediately without clicking
+      // Auto-scroll to the first match immediately
       setTimeout(() => {
         btnNext.click();
       }, 300);
 
+      // PREVIOUS BUTTON LOGIC
+      btnPrev.addEventListener("click", () => {
+        // This math ensures that if you are on 0, it wraps around to the last item
+        currentIndex = (currentIndex - 1 + marks.length) % marks.length;
+        indexLabel.textContent = currentIndex + 1;
+
+        marks[currentIndex].scrollIntoView({
+          behavior: "smooth",
+          block: "center"
+        });
+      });
+
+      // NEXT BUTTON LOGIC
       btnNext.addEventListener("click", () => {
         currentIndex = (currentIndex + 1) % marks.length;
         indexLabel.textContent = currentIndex + 1;

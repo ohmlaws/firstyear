@@ -3,7 +3,6 @@
   See: <https://github.com/christian-fei/Simple-Jekyll-Search>
   functionality to extract and highlight matched snippets in search results added <https://github.com/ohmlaws/ohmlaws.github.io> 
 -->
-
 {% capture result_elem %}
   <article class="px-1 px-sm-2 px-lg-4 px-xl-0">
     <header>
@@ -24,15 +23,10 @@
   }
 
   function buildRegex(query) {
-    const words = query
-      .trim()
-      .split(/\s+/)
-      .filter(Boolean)
-      .map(escapeRegExp);
-
-    return words.length
-      ? new RegExp('(' + words.join('|') + ')', 'gi')
-      : null;
+    const cleanQuery = query.trim();
+    if (cleanQuery.length < 2) return null;
+    const exactPhrase = escapeRegExp(cleanQuery).replace(/\s+/g, '\\s+');
+    return new RegExp('(' + exactPhrase + ')', 'gi');
   }
 
   function createSnippet(content, regex) {
@@ -130,4 +124,4 @@
     });
 
   });
-    </script>
+</script>

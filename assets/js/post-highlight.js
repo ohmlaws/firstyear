@@ -18,18 +18,14 @@
 
     if (!article) return;
 
-    // --- EXACT PHRASE MATCHING ---
     const cleanQuery = query.trim();
     if (cleanQuery.length < 2) return; 
 
-    // Match the whole phrase exactly as typed, rather than splitting it into individual words
     const exactPhrase = escapeRegExp(cleanQuery).replace(/\s+/g, "\\s+");
     const regex = new RegExp("(" + exactPhrase + ")", "gi");
 
     const SKIP = new Set([
-      "SCRIPT", "STYLE", "NOSCRIPT", "PRE", "CODE",
-      "KBD", "SAMP", "TEXTAREA", "INPUT", "BUTTON",
-      "SELECT", "OPTION", "SVG", "MARK"
+      "SCRIPT", "STYLE", "NOSCRIPT", "KBD", "SAMP", "TEXTAREA", "INPUT", "BUTTON", "SELECT", "OPTION", "SVG", "MARK"
     ]);
 
     const walker = document.createTreeWalker(
@@ -41,7 +37,7 @@
           const parent = node.parentElement;
           if (!parent) return NodeFilter.FILTER_REJECT;
           if (SKIP.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
-          if (parent.closest("#toc, #toc-popup, #toc-bar, .toc-list, #sidebar, #panel-wrapper, .search, .mermaid, .highlight, .rouge-table, .anchor, .sr-only, .visually-hidden, .d-none, [hidden]")) {
+          if (parent.closest("#toc, #toc-popup, #toc-bar, .toc-list, #sidebar, #panel-wrapper, .search, .mermaid, .anchor, .sr-only, .visually-hidden, .d-none, [hidden], header, .post-meta, .post-tags, .license-wrapper")) {
             return NodeFilter.FILTER_REJECT;
           }
           
@@ -89,12 +85,11 @@
       node.parentNode.replaceChild(fragment, node);
     });
 
-    // --- FLOATING NAVIGATOR UI ---
     if (matchCount > 0) {
       const marks = document.querySelectorAll(".search-highlight");
       let currentIndex = -1; 
 
-      const floatUI = document.createElement("div");
+            const floatUI = document.createElement("div");
       floatUI.id = "search-highlight-nav";
       
       floatUI.style.cssText = `
@@ -107,7 +102,7 @@
         padding: 10px 15px;
         border-radius: 8px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.15);
-        z-index: 9999;
+        z-index: 90; 
         display: flex;
         align-items: center;
         gap: 12px;
@@ -126,18 +121,25 @@
       `;
       
       document.body.appendChild(floatUI);
+      const searchTrigger = document.getElementById("search-trigger");
+      const searchInput = document.getElementById("search-input");
+      const searchCancel = document.getElementById("search-cancel");
+      const hideNav = () => { floatUI.style.display = "none"; };
+      const showNav = () => { floatUI.style.display = "flex"; };
+
+      if (searchTrigger) searchTrigger.addEventListener("click", hideNav);
+      if (searchInput) searchInput.addEventListener("focus", hideNav);
+      if (searchCancel) searchCancel.addEventListener("click", showNav);
 
       const indexLabel = document.getElementById("highlight-current-index");
       const btnPrev = document.getElementById("btn-prev-match");
       const btnNext = document.getElementById("btn-next-match");
       const btnClear = document.getElementById("btn-clear-match");
 
-      // Auto-scroll to the first match immediately
       setTimeout(() => {
         btnNext.click();
       }, 300);
 
-      // PREVIOUS BUTTON LOGIC
       btnPrev.addEventListener("click", () => {
         currentIndex = (currentIndex - 1 + marks.length) % marks.length;
         indexLabel.textContent = currentIndex + 1;
@@ -148,7 +150,6 @@
         });
       });
 
-      // NEXT BUTTON LOGIC
       btnNext.addEventListener("click", () => {
         currentIndex = (currentIndex + 1) % marks.length;
         indexLabel.textContent = currentIndex + 1;

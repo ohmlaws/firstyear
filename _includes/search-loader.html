@@ -23,105 +23,87 @@
   }
 
   function buildRegex(query) {
-    const cleanQuery = query.trim();
+    var cleanQuery = query.trim();
     if (cleanQuery.length < 2) return null;
-    const exactPhrase = escapeRegExp(cleanQuery).replace(/\s+/g, '\\s+');
+
+    var exactPhrase = escapeRegExp(cleanQuery).replace(/\s+/g, '\\s+');
     return new RegExp('(' + exactPhrase + ')', 'gi');
   }
 
   function createSnippet(content, regex) {
-
     if (!regex || !content) {
-      return content.length > 180
-        ? content.substring(0, 180) + '...'
-        : content;
+      return content.length > 180 ? content.substring(0, 180) + '...' : content;
     }
+
+    var allMatches = content.match(regex);
+    var totalMatches = allMatches ? allMatches.length : 0;
 
     regex.lastIndex = 0;
-    const match = regex.exec(content);
+    var match = regex.exec(content);
 
     if (!match) {
-      return content.length > 180
-        ? content.substring(0, 180) + '...'
-        : content;
+      return content.length > 180 ? content.substring(0, 180) + '...' : content;
     }
 
-    let start = Math.max(0, match.index - 100);
-    let end = Math.min(content.length, match.index + match[0].length + 100);
+    var start = Math.max(0, match.index - 100);
+    var end = Math.min(content.length, match.index + match[0].length + 100);
 
     if (start > 0) {
-      const s = content.indexOf(' ', start);
+      var s = content.indexOf(' ', start);
       if (s !== -1) start = s + 1;
     }
 
     if (end < content.length) {
-      const e = content.lastIndexOf(' ', end);
+      var e = content.lastIndexOf(' ', end);
       if (e !== -1) end = e;
     }
 
-    let snippet = content.substring(start, end);
+    var snippet = content.substring(start, end);
 
     if (start > 0) snippet = '...' + snippet;
     if (end < content.length) snippet += '...';
 
     regex.lastIndex = 0;
-
-    return snippet.replace(
+    
+    var finalSnippet = snippet.replace(
       regex,
       '<mark class="search-highlight">$1</mark>'
     );
+
+    if (totalMatches > 1) {
+      var extraMatches = totalMatches - 1;
+      finalSnippet += '<div style="text-align: right; color: #ef9c03; font-size: 0.95em;">+' + extraMatches + ' matches</div>';
+    }
+
+    return finalSnippet;
   }
 
-  document.addEventListener('DOMContentLoaded', () => {
-
+  document.addEventListener('DOMContentLoaded', function() {
     SimpleJekyllSearch({
-
       searchInput: document.getElementById('search-input'),
-
       resultsContainer: document.getElementById('search-results'),
-
       json: '{{ "/assets/js/data/search.json" | relative_url }}',
-
       searchResultTemplate: {{ result_elem | strip_newlines | jsonify }},
-
       noResultsText: {{ not_found | jsonify }},
-
       templateMiddleware: function(prop, value) {
-
-        const query = document.getElementById('search-input').value.trim();
-
-        const regex = buildRegex(query);
+        var query = document.getElementById('search-input').value.trim();
+        var regex = buildRegex(query);
 
         if (prop === 'categories') {
-          return value
-            ? `<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>${value}</div>`
-            : '';
+          return value ? '<div class="me-sm-4"><i class="far fa-folder fa-fw"></i>' + value + '</div>' : '';
         }
-
         if (prop === 'tags') {
-          return value
-            ? `<div><i class="fa fa-tag fa-fw"></i>${value}</div>`
-            : '';
+          return value ? '<div><i class="fa fa-tag fa-fw"></i>' + value + '</div>' : '';
         }
-
         if (prop === 'content') {
           return createSnippet(value, regex);
         }
-
         if (prop === 'url') {
           if (!query) return value;
-
-          return value +
-            (value.includes('?') ? '&' : '?') +
-            'highlight=' +
-            encodeURIComponent(query);
+          return value + (value.includes('?') ? '&' : '?') + 'highlight=' + encodeURIComponent(query);
         }
-
         return value;
-
       }
-
     });
-
   });
 </script>

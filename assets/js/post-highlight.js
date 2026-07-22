@@ -18,15 +18,13 @@
 
     if (!article) return;
 
-    const words = query
-      .trim()
-      .split(/\s+/)
-      .filter(Boolean)
-      .map(escapeRegExp);
+    // --- EXACT PHRASE MATCHING ---
+    const cleanQuery = query.trim();
+    if (cleanQuery.length < 2) return; 
 
-    if (!words.length) return;
-
-    const regex = new RegExp("(" + words.join("|") + ")", "gi");
+    // Match the whole phrase exactly as typed, rather than splitting it into individual words
+    const exactPhrase = escapeRegExp(cleanQuery).replace(/\s+/g, "\\s+");
+    const regex = new RegExp("(" + exactPhrase + ")", "gi");
 
     const SKIP = new Set([
       "SCRIPT", "STYLE", "NOSCRIPT", "PRE", "CODE",
@@ -43,7 +41,6 @@
           const parent = node.parentElement;
           if (!parent) return NodeFilter.FILTER_REJECT;
           if (SKIP.has(parent.tagName)) return NodeFilter.FILTER_REJECT;
-          
           if (parent.closest("#toc, #toc-popup, #toc-bar, .toc-list, #sidebar, #panel-wrapper, .search, .mermaid, .highlight, .rouge-table, .anchor, .sr-only, .visually-hidden, .d-none, [hidden]")) {
             return NodeFilter.FILTER_REJECT;
           }
@@ -116,10 +113,13 @@
         gap: 12px;
         font-family: inherit;
         font-size: 0.9rem;
+        max-width: 90vw;
+        flex-wrap: wrap;
+        justify-content: center;
       `;
 
       floatUI.innerHTML = `
-        <span><span id="highlight-current-index">0</span> / ${matchCount}</span>
+        <span style="white-space: nowrap;"><span id="highlight-current-index">0</span> / ${matchCount}</span>
         <button id="btn-prev-match" style="background: #0550ae; color: #fff; border: none; padding: 5px 12px; border-radius: 5px; cursor: pointer;">Prev</button>
         <button id="btn-next-match" style="background: #0550ae; color: #fff; border: none; padding: 5px 12px; border-radius: 5px; cursor: pointer;">Next</button>
         <button id="btn-clear-match" style="background: transparent; color: inherit; border: 1px solid var(--border-color, #ccc); padding: 4px 11px; border-radius: 5px; cursor: pointer;">Clear</button>
@@ -139,7 +139,6 @@
 
       // PREVIOUS BUTTON LOGIC
       btnPrev.addEventListener("click", () => {
-        // This math ensures that if you are on 0, it wraps around to the last item
         currentIndex = (currentIndex - 1 + marks.length) % marks.length;
         indexLabel.textContent = currentIndex + 1;
 
